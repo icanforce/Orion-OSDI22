@@ -1,0 +1,33 @@
+{
+  "Comment": "A State Machine for LightGBM",
+  "StartAt": "PCA",
+  "States": {
+    "PCA": {
+      "Type": "Task",
+      "Resource": "<--->",
+      "Next": "Train_Map"
+    },
+    "Train_Map" : {
+      "Type": "Map",
+      "InputPath": "$.detail",
+      "ItemsPath": "$.indeces",
+      "MaxConcurrency": 100,
+      "Iterator": {
+         "StartAt": "Train",
+         "States": {
+            "Train": {
+             "Type" : "Task",
+             "Resource": "<--->",
+             "End": true
+              }
+         }
+      },
+      "Next" : "Combine_and_Test"
+    },
+   "Combine_and_Test": {
+      "Type": "Task",
+      "Resource": "<--->",
+      "End": true
+    }  
+  }
+}

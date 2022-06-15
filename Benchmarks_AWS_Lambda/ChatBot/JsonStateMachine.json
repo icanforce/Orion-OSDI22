@@ -1,0 +1,28 @@
+{
+  "Comment": "A State Machine for LightGBM",
+  "StartAt": "Preprocess",
+  "States": {
+    "Preprocess": {
+      "Type": "Task",
+      "Resource": "XXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "Next": "Train_LR_Map"
+    },
+    "Train_LR_Map" : {
+      "Type": "Map",
+      "InputPath": "$.detail",
+      "ItemsPath": "$.indeces",
+      "MaxConcurrency": 100,
+      "Iterator": {
+         "StartAt": "Train_Intent",
+         "States": {
+            "Train_Intent": {
+             "Type" : "Task",
+             "Resource": "XXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+             "End": true
+              }
+         }
+      },
+       "End": true
+    }
+  }
+}

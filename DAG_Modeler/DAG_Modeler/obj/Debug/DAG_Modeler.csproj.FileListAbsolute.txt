@@ -1,0 +1,7 @@
+D:\MSR2020\Orion-OSDI-Camera-Read\DAG_Modeler\DAG_Modeler\bin\Debug\DAG_Modeler.exe.config
+D:\MSR2020\Orion-OSDI-Camera-Read\DAG_Modeler\DAG_Modeler\bin\Debug\DAG_Modeler.exe
+D:\MSR2020\Orion-OSDI-Camera-Read\DAG_Modeler\DAG_Modeler\bin\Debug\DAG_Modeler.pdb
+D:\MSR2020\Orion-OSDI-Camera-Read\DAG_Modeler\DAG_Modeler\obj\Debug\DAG_Modeler.csprojAssemblyReference.cache
+D:\MSR2020\Orion-OSDI-Camera-Read\DAG_Modeler\DAG_Modeler\obj\Debug\DAG_Modeler.csproj.CoreCompileInputs.cache
+D:\MSR2020\Orion-OSDI-Camera-Read\DAG_Modeler\DAG_Modeler\obj\Debug\DAG_Modeler.exe
+D:\MSR2020\Orion-OSDI-Camera-Read\DAG_Modeler\DAG_Modeler\obj\Debug\DAG_Modeler.pdb

@@ -1,0 +1,297 @@
+Starting prewarmer => 40660
+Prewarming: Split
+Prewarming: Extract
+Prewarming: Extract
+Prewarming: Extract
+Prewarming: Extract
+Prewarming: Extract
+Prewarming: Classify
+Prewarming: Classify
+Prewarming: Classify
+Prewarming: Classify
+Prewarming: Classify
+Starting consumer => 40661
+40661 entered Split
+**** found Split in dict_payloads
+num instances of Split are: 1
+Prewarmer 40660 exiting...
+Executing Split with { "src_name" : "5", "DOP" : "5", "detect_prob" : 2 }
+ adding data to shared_dict_payloads[Extract]: {"detail": {"indeces": [{"values": [0, 1, 2, 3, 4, 5], "source_id": "5", "millis": [1651383510157, 1651383510259, 1651383510337, 1651383510429, 1651383510511, 1651383510609], "detect_prob": 2}, {"values": [6, 7, 8, 9, 10, 11], "source_id": "5", "millis": [1651383510649, 1651383510708, 1651383510772, 1651383510856, 1651383510901, 1651383510944], "detect_prob": 2}, {"values": [12, 13, 14, 15, 16, 17], "source_id": "5", "millis": [1651383511015, 1651383511137, 1651383511239, 1651383511302, 1651383511348, 1651383511395], "detect_prob": 2}, {"values": [18, 19, 20, 21, 22, 23], "source_id": "5", "millis": [1651383511478, 1651383511539, 1651383511605, 1651383511650, 1651383511700, 1651383511769], "detect_prob": 2}, {"values": [24, 25, 26, 27, 28, 29], "source_id": "5", "millis": [1651383511815, 1651383511908, 1651383511958, 1651383512007, 1651383512059, 1651383512112], "detect_prob": 2}]}}
+5
+Split
+********************
+b'{"detail": {"indeces": [{"values": [0, 1, 2, 3, 4, 5], "source_id": "5", "millis": [1651383510157, 1651383510259, 1651383510337, 1651383510429, 1651383510511, 1651383510609], "detect_prob": 2}, {"values": [6, 7, 8, 9, 10, 11], "source_id": "5", "millis": [1651383510649, 1651383510708, 1651383510772, 1651383510856, 1651383510901, 1651383510944], "detect_prob": 2}, {"values": [12, 13, 14, 15, 16, 17], "source_id": "5", "millis": [1651383511015, 1651383511137, 1651383511239, 1651383511302, 1651383511348, 1651383511395], "detect_prob": 2}, {"values": [18, 19, 20, 21, 22, 23], "source_id": "5", "millis": [1651383511478, 1651383511539, 1651383511605, 1651383511650, 1651383511700, 1651383511769], "detect_prob": 2}, {"values": [24, 25, 26, 27, 28, 29], "source_id": "5", "millis": [1651383511815, 1651383511908, 1651383511958, 1651383512007, 1651383512059, 1651383512112], "detect_prob": 2}]}}'
+********************
+40661 Done Split
+40661 entered Extract
+**** found Extract in dict_payloads
+num instances of Extract are: 5
+Executing Extract with {"values": [12, 13, 14, 15, 16, 17], "detect_prob": 2, "source_id": "5", "millis": [1651383511015, 1651383511137, 1651383511239, 1651383511302, 1651383511348, 1651383511395]}
+ adding data to shared_dict_payloads["Classify"]: {"statusCode": 200, "counter": 6, "millis1": [1651383511015, 1651383511137, 1651383511239, 1651383511302, 1651383511348, 1651383511395], "millis2": [1651383513361, 1651383513698, 1651383513784, 1651383513886, 1651383513962, 1651383514063], "source_id": "5", "detect_prob": 2, "values": [12, 13, 14, 15, 16, 17], "body": "\"Download/Split/Upload Successful!\""}
+1
+Extract
+********************
+b'{"statusCode": 200, "counter": 6, "millis1": [1651383511015, 1651383511137, 1651383511239, 1651383511302, 1651383511348, 1651383511395], "millis2": [1651383513361, 1651383513698, 1651383513784, 1651383513886, 1651383513962, 1651383514063], "source_id": "5", "detect_prob": 2, "values": [12, 13, 14, 15, 16, 17], "body": "\\"Download/Split/Upload Successful!\\""}'
+********************
+Executing Extract with {"values": [18, 19, 20, 21, 22, 23], "detect_prob": 2, "source_id": "5", "millis": [1651383511478, 1651383511539, 1651383511605, 1651383511650, 1651383511700, 1651383511769]}
+ adding data to shared_dict_payloads["Classify"]: {"statusCode": 200, "counter": 6, "millis1": [1651383511478, 1651383511539, 1651383511605, 1651383511650, 1651383511700, 1651383511769], "millis2": [1651383513434, 1651383513735, 1651383513806, 1651383513881, 1651383514001, 1651383514086], "source_id": "5", "detect_prob": 2, "values": [18, 19, 20, 21, 22, 23], "body": "\"Download/Split/Upload Successful!\""}
+2
+Extract
+********************
+b'{"statusCode": 200, "counter": 6, "millis1": [1651383511478, 1651383511539, 1651383511605, 1651383511650, 1651383511700, 1651383511769], "millis2": [1651383513434, 1651383513735, 1651383513806, 1651383513881, 1651383514001, 1651383514086], "source_id": "5", "detect_prob": 2, "values": [18, 19, 20, 21, 22, 23], "body": "\\"Download/Split/Upload Successful!\\""}'
+********************
+Executing Extract with {"values": [24, 25, 26, 27, 28, 29], "detect_prob": 2, "source_id": "5", "millis": [1651383511815, 1651383511908, 1651383511958, 1651383512007, 1651383512059, 1651383512112]}
+ adding data to shared_dict_payloads["Classify"]: {"statusCode": 200, "counter": 6, "millis1": [1651383511815, 1651383511908, 1651383511958, 1651383512007, 1651383512059, 1651383512112], "millis2": [1651383513518, 1651383513830, 1651383513922, 1651383513999, 1651383514103, 1651383514192], "source_id": "5", "detect_prob": 2, "values": [24, 25, 26, 27, 28, 29], "body": "\"Download/Split/Upload Successful!\""}
+3
+Extract
+********************
+b'{"statusCode": 200, "counter": 6, "millis1": [1651383511815, 1651383511908, 1651383511958, 1651383512007, 1651383512059, 1651383512112], "millis2": [1651383513518, 1651383513830, 1651383513922, 1651383513999, 1651383514103, 1651383514192], "source_id": "5", "detect_prob": 2, "values": [24, 25, 26, 27, 28, 29], "body": "\\"Download/Split/Upload Successful!\\""}'
+********************
+Executing Extract with {"values": [6, 7, 8, 9, 10, 11], "detect_prob": 2, "source_id": "5", "millis": [1651383510649, 1651383510708, 1651383510772, 1651383510856, 1651383510901, 1651383510944]}
+ adding data to shared_dict_payloads["Classify"]: {"statusCode": 200, "counter": 6, "millis1": [1651383510649, 1651383510708, 1651383510772, 1651383510856, 1651383510901, 1651383510944], "millis2": [1651383513463, 1651383513806, 1651383513886, 1651383513964, 1651383514079, 1651383514193], "source_id": "5", "detect_prob": 2, "values": [6, 7, 8, 9, 10, 11], "body": "\"Download/Split/Upload Successful!\""}
+4
+Extract
+********************
+b'{"statusCode": 200, "counter": 6, "millis1": [1651383510649, 1651383510708, 1651383510772, 1651383510856, 1651383510901, 1651383510944], "millis2": [1651383513463, 1651383513806, 1651383513886, 1651383513964, 1651383514079, 1651383514193], "source_id": "5", "detect_prob": 2, "values": [6, 7, 8, 9, 10, 11], "body": "\\"Download/Split/Upload Successful!\\""}'
+********************
+Executing Extract with {"values": [0, 1, 2, 3, 4, 5], "detect_prob": 2, "source_id": "5", "millis": [1651383510157, 1651383510259, 1651383510337, 1651383510429, 1651383510511, 1651383510609]}
+ adding data to shared_dict_payloads["Classify"]: {"statusCode": 200, "counter": 6, "millis1": [1651383510157, 1651383510259, 1651383510337, 1651383510429, 1651383510511, 1651383510609], "millis2": [1651383513820, 1651383514168, 1651383514276, 1651383514384, 1651383514538, 1651383514636], "source_id": "5", "detect_prob": 2, "values": [0, 1, 2, 3, 4, 5], "body": "\"Download/Split/Upload Successful!\""}
+5
+Extract
+********************
+b'{"statusCode": 200, "counter": 6, "millis1": [1651383510157, 1651383510259, 1651383510337, 1651383510429, 1651383510511, 1651383510609], "millis2": [1651383513820, 1651383514168, 1651383514276, 1651383514384, 1651383514538, 1651383514636], "source_id": "5", "detect_prob": 2, "values": [0, 1, 2, 3, 4, 5], "body": "\\"Download/Split/Upload Successful!\\""}'
+********************
+40661 Done Extract
+40661 entered Classify
+**** found Classify in dict_payloads
+num instances of Classify are: 5
+Executing Classify with {"statusCode": 200, "counter": 6, "millis1": [1651383510649, 1651383510708, 1651383510772, 1651383510856, 1651383510901, 1651383510944], "millis2": [1651383513463, 1651383513806, 1651383513886, 1651383513964, 1651383514079, 1651383514193], "source_id": "5", "detect_prob": 2, "values": [6, 7, 8, 9, 10, 11], "body": "\"Download/Split/Upload Successful!\""}
+done!
+Classify
+********************
+b'{"duration": "7058.565185546875", "values": "[6, 7, 8, 9, 10, 11]"}'
+********************
+Executing Classify with {"statusCode": 200, "counter": 6, "millis1": [1651383511815, 1651383511908, 1651383511958, 1651383512007, 1651383512059, 1651383512112], "millis2": [1651383513518, 1651383513830, 1651383513922, 1651383513999, 1651383514103, 1651383514192], "source_id": "5", "detect_prob": 2, "values": [24, 25, 26, 27, 28, 29], "body": "\"Download/Split/Upload Successful!\""}
+done!
+Classify
+********************
+b'{"duration": "7679.594482421875", "values": "[24, 25, 26, 27, 28, 29]"}'
+********************
+Executing Classify with {"statusCode": 200, "counter": 6, "millis1": [1651383511478, 1651383511539, 1651383511605, 1651383511650, 1651383511700, 1651383511769], "millis2": [1651383513434, 1651383513735, 1651383513806, 1651383513881, 1651383514001, 1651383514086], "source_id": "5", "detect_prob": 2, "values": [18, 19, 20, 21, 22, 23], "body": "\"Download/Split/Upload Successful!\""}
+done!
+Classify
+********************
+b'{"duration": "7606.697509765625", "values": "[18, 19, 20, 21, 22, 23]"}'
+********************
+Executing Classify with {"statusCode": 200, "counter": 6, "millis1": [1651383510157, 1651383510259, 1651383510337, 1651383510429, 1651383510511, 1651383510609], "millis2": [1651383513820, 1651383514168, 1651383514276, 1651383514384, 1651383514538, 1651383514636], "source_id": "5", "detect_prob": 2, "values": [0, 1, 2, 3, 4, 5], "body": "\"Download/Split/Upload Successful!\""}
+done!
+Classify
+********************
+b'{"duration": "8465.83544921875", "values": "[0, 1, 2, 3, 4, 5]"}'
+********************
+Executing Classify with {"statusCode": 200, "counter": 6, "millis1": [1651383511015, 1651383511137, 1651383511239, 1651383511302, 1651383511348, 1651383511395], "millis2": [1651383513361, 1651383513698, 1651383513784, 1651383513886, 1651383513962, 1651383514063], "source_id": "5", "detect_prob": 2, "values": [12, 13, 14, 15, 16, 17], "body": "\"Download/Split/Upload Successful!\""}
+done!
+Classify
+********************
+b'{"duration": "8356.576171875", "values": "[12, 13, 14, 15, 16, 17]"}'
+********************
+E2E Latenct : 19.62042999267578 seconds 
+========================
+Starting prewarmer => 40821
+Prewarming: Split
+Prewarming: Extract
+Prewarming: Extract
+Prewarming: Extract
+Prewarming: Extract
+Prewarming: Extract
+Prewarming: Classify
+Prewarming: Classify
+Prewarming: Classify
+Prewarming: Classify
+Prewarming: Classify
+Starting consumer => 40822
+40822 entered Split
+**** found Split in dict_payloads
+num instances of Split are: 1
+Prewarmer 40821 exiting...
+Executing Split with { "src_name" : "5", "DOP" : "5", "detect_prob" : 2 }
+ adding data to shared_dict_payloads[Extract]: {"detail": {"indeces": [{"values": [0, 1, 2, 3, 4, 5], "source_id": "5", "millis": [1651383593393, 1651383593484, 1651383593603, 1651383593675, 1651383593766, 1651383593844], "detect_prob": 2}, {"values": [6, 7, 8, 9, 10, 11], "source_id": "5", "millis": [1651383593890, 1651383593937, 1651383594036, 1651383594083, 1651383594129, 1651383594233], "detect_prob": 2}, {"values": [12, 13, 14, 15, 16, 17], "source_id": "5", "millis": [1651383594327, 1651383594420, 1651383594551, 1651383594604, 1651383594653, 1651383594702], "detect_prob": 2}, {"values": [18, 19, 20, 21, 22, 23], "source_id": "5", "millis": [1651383594762, 1651383594808, 1651383594897, 1651383594951, 1651383595003, 1651383595080], "detect_prob": 2}, {"values": [24, 25, 26, 27, 28, 29], "source_id": "5", "millis": [1651383595170, 1651383595251, 1651383595329, 1651383595379, 1651383595448, 1651383595539], "detect_prob": 2}]}}
+5
+Split
+********************
+b'{"detail": {"indeces": [{"values": [0, 1, 2, 3, 4, 5], "source_id": "5", "millis": [1651383593393, 1651383593484, 1651383593603, 1651383593675, 1651383593766, 1651383593844], "detect_prob": 2}, {"values": [6, 7, 8, 9, 10, 11], "source_id": "5", "millis": [1651383593890, 1651383593937, 1651383594036, 1651383594083, 1651383594129, 1651383594233], "detect_prob": 2}, {"values": [12, 13, 14, 15, 16, 17], "source_id": "5", "millis": [1651383594327, 1651383594420, 1651383594551, 1651383594604, 1651383594653, 1651383594702], "detect_prob": 2}, {"values": [18, 19, 20, 21, 22, 23], "source_id": "5", "millis": [1651383594762, 1651383594808, 1651383594897, 1651383594951, 1651383595003, 1651383595080], "detect_prob": 2}, {"values": [24, 25, 26, 27, 28, 29], "source_id": "5", "millis": [1651383595170, 1651383595251, 1651383595329, 1651383595379, 1651383595448, 1651383595539], "detect_prob": 2}]}}'
+********************
+40822 Done Split
+40822 entered Extract
+**** found Extract in dict_payloads
+num instances of Extract are: 5
+Executing Extract with {"values": [6, 7, 8, 9, 10, 11], "millis": [1651383593890, 1651383593937, 1651383594036, 1651383594083, 1651383594129, 1651383594233], "detect_prob": 2, "source_id": "5"}
+ adding data to shared_dict_payloads["Classify"]: {"statusCode": 200, "counter": 6, "millis1": [1651383593890, 1651383593937, 1651383594036, 1651383594083, 1651383594129, 1651383594233], "millis2": [1651383596894, 1651383597231, 1651383597339, 1651383597424, 1651383597550, 1651383597653], "source_id": "5", "detect_prob": 2, "values": [6, 7, 8, 9, 10, 11], "body": "\"Download/Split/Upload Successful!\""}
+1
+Extract
+********************
+b'{"statusCode": 200, "counter": 6, "millis1": [1651383593890, 1651383593937, 1651383594036, 1651383594083, 1651383594129, 1651383594233], "millis2": [1651383596894, 1651383597231, 1651383597339, 1651383597424, 1651383597550, 1651383597653], "source_id": "5", "detect_prob": 2, "values": [6, 7, 8, 9, 10, 11], "body": "\\"Download/Split/Upload Successful!\\""}'
+********************
+Executing Extract with {"values": [24, 25, 26, 27, 28, 29], "millis": [1651383595170, 1651383595251, 1651383595329, 1651383595379, 1651383595448, 1651383595539], "detect_prob": 2, "source_id": "5"}
+ adding data to shared_dict_payloads["Classify"]: {"statusCode": 200, "counter": 6, "millis1": [1651383595170, 1651383595251, 1651383595329, 1651383595379, 1651383595448, 1651383595539], "millis2": [1651383596904, 1651383597266, 1651383597391, 1651383597494, 1651383597612, 1651383597693], "source_id": "5", "detect_prob": 2, "values": [24, 25, 26, 27, 28, 29], "body": "\"Download/Split/Upload Successful!\""}
+2
+Extract
+********************
+b'{"statusCode": 200, "counter": 6, "millis1": [1651383595170, 1651383595251, 1651383595329, 1651383595379, 1651383595448, 1651383595539], "millis2": [1651383596904, 1651383597266, 1651383597391, 1651383597494, 1651383597612, 1651383597693], "source_id": "5", "detect_prob": 2, "values": [24, 25, 26, 27, 28, 29], "body": "\\"Download/Split/Upload Successful!\\""}'
+********************
+Executing Extract with {"values": [18, 19, 20, 21, 22, 23], "millis": [1651383594762, 1651383594808, 1651383594897, 1651383594951, 1651383595003, 1651383595080], "detect_prob": 2, "source_id": "5"}
+ adding data to shared_dict_payloads["Classify"]: {"statusCode": 200, "counter": 6, "millis1": [1651383594762, 1651383594808, 1651383594897, 1651383594951, 1651383595003, 1651383595080], "millis2": [1651383596942, 1651383597293, 1651383597427, 1651383597506, 1651383597583, 1651383597685], "source_id": "5", "detect_prob": 2, "values": [18, 19, 20, 21, 22, 23], "body": "\"Download/Split/Upload Successful!\""}
+3
+Extract
+********************
+b'{"statusCode": 200, "counter": 6, "millis1": [1651383594762, 1651383594808, 1651383594897, 1651383594951, 1651383595003, 1651383595080], "millis2": [1651383596942, 1651383597293, 1651383597427, 1651383597506, 1651383597583, 1651383597685], "source_id": "5", "detect_prob": 2, "values": [18, 19, 20, 21, 22, 23], "body": "\\"Download/Split/Upload Successful!\\""}'
+********************
+Executing Extract with {"values": [0, 1, 2, 3, 4, 5], "millis": [1651383593393, 1651383593484, 1651383593603, 1651383593675, 1651383593766, 1651383593844], "detect_prob": 2, "source_id": "5"}
+ adding data to shared_dict_payloads["Classify"]: {"statusCode": 200, "counter": 6, "millis1": [1651383593393, 1651383593484, 1651383593603, 1651383593675, 1651383593766, 1651383593844], "millis2": [1651383596927, 1651383597286, 1651383597372, 1651383597483, 1651383597587, 1651383597775], "source_id": "5", "detect_prob": 2, "values": [0, 1, 2, 3, 4, 5], "body": "\"Download/Split/Upload Successful!\""}
+4
+Extract
+********************
+b'{"statusCode": 200, "counter": 6, "millis1": [1651383593393, 1651383593484, 1651383593603, 1651383593675, 1651383593766, 1651383593844], "millis2": [1651383596927, 1651383597286, 1651383597372, 1651383597483, 1651383597587, 1651383597775], "source_id": "5", "detect_prob": 2, "values": [0, 1, 2, 3, 4, 5], "body": "\\"Download/Split/Upload Successful!\\""}'
+********************
+Executing Extract with {"values": [12, 13, 14, 15, 16, 17], "millis": [1651383594327, 1651383594420, 1651383594551, 1651383594604, 1651383594653, 1651383594702], "detect_prob": 2, "source_id": "5"}
+ adding data to shared_dict_payloads["Classify"]: {"statusCode": 200, "counter": 6, "millis1": [1651383594327, 1651383594420, 1651383594551, 1651383594604, 1651383594653, 1651383594702], "millis2": [1651383597260, 1651383597596, 1651383597684, 1651383597789, 1651383597876, 1651383597985], "source_id": "5", "detect_prob": 2, "values": [12, 13, 14, 15, 16, 17], "body": "\"Download/Split/Upload Successful!\""}
+5
+Extract
+********************
+b'{"statusCode": 200, "counter": 6, "millis1": [1651383594327, 1651383594420, 1651383594551, 1651383594604, 1651383594653, 1651383594702], "millis2": [1651383597260, 1651383597596, 1651383597684, 1651383597789, 1651383597876, 1651383597985], "source_id": "5", "detect_prob": 2, "values": [12, 13, 14, 15, 16, 17], "body": "\\"Download/Split/Upload Successful!\\""}'
+********************
+40822 Done Extract
+40822 entered Classify
+**** found Classify in dict_payloads
+num instances of Classify are: 5
+Executing Classify with {"statusCode": 200, "counter": 6, "millis1": [1651383594762, 1651383594808, 1651383594897, 1651383594951, 1651383595003, 1651383595080], "millis2": [1651383596942, 1651383597293, 1651383597427, 1651383597506, 1651383597583, 1651383597685], "source_id": "5", "detect_prob": 2, "values": [18, 19, 20, 21, 22, 23], "body": "\"Download/Split/Upload Successful!\""}
+done!
+Classify
+********************
+b'{"duration": "7304.9892578125", "values": "[18, 19, 20, 21, 22, 23]"}'
+********************
+Executing Classify with {"statusCode": 200, "counter": 6, "millis1": [1651383593393, 1651383593484, 1651383593603, 1651383593675, 1651383593766, 1651383593844], "millis2": [1651383596927, 1651383597286, 1651383597372, 1651383597483, 1651383597587, 1651383597775], "source_id": "5", "detect_prob": 2, "values": [0, 1, 2, 3, 4, 5], "body": "\"Download/Split/Upload Successful!\""}
+done!
+Classify
+********************
+b'{"duration": "7221.254638671875", "values": "[0, 1, 2, 3, 4, 5]"}'
+********************
+Executing Classify with {"statusCode": 200, "counter": 6, "millis1": [1651383593890, 1651383593937, 1651383594036, 1651383594083, 1651383594129, 1651383594233], "millis2": [1651383596894, 1651383597231, 1651383597339, 1651383597424, 1651383597550, 1651383597653], "source_id": "5", "detect_prob": 2, "values": [6, 7, 8, 9, 10, 11], "body": "\"Download/Split/Upload Successful!\""}
+done!
+Classify
+********************
+b'{"duration": "7285.883544921875", "values": "[6, 7, 8, 9, 10, 11]"}'
+********************
+Executing Classify with {"statusCode": 200, "counter": 6, "millis1": [1651383595170, 1651383595251, 1651383595329, 1651383595379, 1651383595448, 1651383595539], "millis2": [1651383596904, 1651383597266, 1651383597391, 1651383597494, 1651383597612, 1651383597693], "source_id": "5", "detect_prob": 2, "values": [24, 25, 26, 27, 28, 29], "body": "\"Download/Split/Upload Successful!\""}
+done!
+Classify
+********************
+b'{"duration": "6982.14794921875", "values": "[24, 25, 26, 27, 28, 29]"}'
+********************
+Executing Classify with {"statusCode": 200, "counter": 6, "millis1": [1651383594327, 1651383594420, 1651383594551, 1651383594604, 1651383594653, 1651383594702], "millis2": [1651383597260, 1651383597596, 1651383597684, 1651383597789, 1651383597876, 1651383597985], "source_id": "5", "detect_prob": 2, "values": [12, 13, 14, 15, 16, 17], "body": "\"Download/Split/Upload Successful!\""}
+done!
+Classify
+********************
+b'{"duration": "8451.367431640625", "values": "[12, 13, 14, 15, 16, 17]"}'
+********************
+E2E Latenct : 19.02526831626892 seconds 
+========================
+Starting prewarmer => 40980
+Prewarming: Split
+Prewarming: Extract
+Prewarming: Extract
+Prewarming: Extract
+Prewarming: Extract
+Prewarming: Extract
+Prewarming: Classify
+Prewarming: Classify
+Prewarming: Classify
+Prewarming: Classify
+Prewarming: Classify
+Starting consumer => 40981
+40981 entered Split
+**** found Split in dict_payloads
+num instances of Split are: 1
+Prewarmer 40980 exiting...
+Executing Split with { "src_name" : "5", "DOP" : "5", "detect_prob" : 2 }
+ adding data to shared_dict_payloads[Extract]: {"detail": {"indeces": [{"values": [0, 1, 2, 3, 4, 5], "source_id": "5", "millis": [1651383675893, 1651383675981, 1651383676080, 1651383676178, 1651383676281, 1651383676400], "detect_prob": 2}, {"values": [6, 7, 8, 9, 10, 11], "source_id": "5", "millis": [1651383676477, 1651383676520, 1651383676563, 1651383676643, 1651383676691, 1651383676767], "detect_prob": 2}, {"values": [12, 13, 14, 15, 16, 17], "source_id": "5", "millis": [1651383676892, 1651383677010, 1651383677102, 1651383677152, 1651383677204, 1651383677331], "detect_prob": 2}, {"values": [18, 19, 20, 21, 22, 23], "source_id": "5", "millis": [1651383677430, 1651383677490, 1651383677579, 1651383677652, 1651383677750, 1651383677822], "detect_prob": 2}, {"values": [24, 25, 26, 27, 28, 29], "source_id": "5", "millis": [1651383677869, 1651383677916, 1651383677967, 1651383678018, 1651383678071, 1651383678126], "detect_prob": 2}]}}
+5
+Split
+********************
+b'{"detail": {"indeces": [{"values": [0, 1, 2, 3, 4, 5], "source_id": "5", "millis": [1651383675893, 1651383675981, 1651383676080, 1651383676178, 1651383676281, 1651383676400], "detect_prob": 2}, {"values": [6, 7, 8, 9, 10, 11], "source_id": "5", "millis": [1651383676477, 1651383676520, 1651383676563, 1651383676643, 1651383676691, 1651383676767], "detect_prob": 2}, {"values": [12, 13, 14, 15, 16, 17], "source_id": "5", "millis": [1651383676892, 1651383677010, 1651383677102, 1651383677152, 1651383677204, 1651383677331], "detect_prob": 2}, {"values": [18, 19, 20, 21, 22, 23], "source_id": "5", "millis": [1651383677430, 1651383677490, 1651383677579, 1651383677652, 1651383677750, 1651383677822], "detect_prob": 2}, {"values": [24, 25, 26, 27, 28, 29], "source_id": "5", "millis": [1651383677869, 1651383677916, 1651383677967, 1651383678018, 1651383678071, 1651383678126], "detect_prob": 2}]}}'
+********************
+40981 Done Split
+40981 entered Extract
+**** found Extract in dict_payloads
+num instances of Extract are: 5
+Executing Extract with {"millis": [1651383677869, 1651383677916, 1651383677967, 1651383678018, 1651383678071, 1651383678126], "source_id": "5", "detect_prob": 2, "values": [24, 25, 26, 27, 28, 29]}
+ adding data to shared_dict_payloads["Classify"]: {"statusCode": 200, "counter": 6, "millis1": [1651383677869, 1651383677916, 1651383677967, 1651383678018, 1651383678071, 1651383678126], "millis2": [1651383679419, 1651383679786, 1651383679868, 1651383679978, 1651383680074, 1651383680159], "source_id": "5", "detect_prob": 2, "values": [24, 25, 26, 27, 28, 29], "body": "\"Download/Split/Upload Successful!\""}
+1
+Extract
+********************
+b'{"statusCode": 200, "counter": 6, "millis1": [1651383677869, 1651383677916, 1651383677967, 1651383678018, 1651383678071, 1651383678126], "millis2": [1651383679419, 1651383679786, 1651383679868, 1651383679978, 1651383680074, 1651383680159], "source_id": "5", "detect_prob": 2, "values": [24, 25, 26, 27, 28, 29], "body": "\\"Download/Split/Upload Successful!\\""}'
+********************
+Executing Extract with {"millis": [1651383677430, 1651383677490, 1651383677579, 1651383677652, 1651383677750, 1651383677822], "source_id": "5", "detect_prob": 2, "values": [18, 19, 20, 21, 22, 23]}
+ adding data to shared_dict_payloads["Classify"]: {"statusCode": 200, "counter": 6, "millis1": [1651383677430, 1651383677490, 1651383677579, 1651383677652, 1651383677750, 1651383677822], "millis2": [1651383679600, 1651383679922, 1651383680015, 1651383680092, 1651383680163, 1651383680262], "source_id": "5", "detect_prob": 2, "values": [18, 19, 20, 21, 22, 23], "body": "\"Download/Split/Upload Successful!\""}
+2
+Extract
+********************
+b'{"statusCode": 200, "counter": 6, "millis1": [1651383677430, 1651383677490, 1651383677579, 1651383677652, 1651383677750, 1651383677822], "millis2": [1651383679600, 1651383679922, 1651383680015, 1651383680092, 1651383680163, 1651383680262], "source_id": "5", "detect_prob": 2, "values": [18, 19, 20, 21, 22, 23], "body": "\\"Download/Split/Upload Successful!\\""}'
+********************
+Executing Extract with {"millis": [1651383675893, 1651383675981, 1651383676080, 1651383676178, 1651383676281, 1651383676400], "source_id": "5", "detect_prob": 2, "values": [0, 1, 2, 3, 4, 5]}
+ adding data to shared_dict_payloads["Classify"]: {"statusCode": 200, "counter": 6, "millis1": [1651383675893, 1651383675981, 1651383676080, 1651383676178, 1651383676281, 1651383676400], "millis2": [1651383679516, 1651383679874, 1651383679991, 1651383680101, 1651383680236, 1651383680330], "source_id": "5", "detect_prob": 2, "values": [0, 1, 2, 3, 4, 5], "body": "\"Download/Split/Upload Successful!\""}
+3
+Extract
+********************
+b'{"statusCode": 200, "counter": 6, "millis1": [1651383675893, 1651383675981, 1651383676080, 1651383676178, 1651383676281, 1651383676400], "millis2": [1651383679516, 1651383679874, 1651383679991, 1651383680101, 1651383680236, 1651383680330], "source_id": "5", "detect_prob": 2, "values": [0, 1, 2, 3, 4, 5], "body": "\\"Download/Split/Upload Successful!\\""}'
+********************
+Executing Extract with {"millis": [1651383676477, 1651383676520, 1651383676563, 1651383676643, 1651383676691, 1651383676767], "source_id": "5", "detect_prob": 2, "values": [6, 7, 8, 9, 10, 11]}
+ adding data to shared_dict_payloads["Classify"]: {"statusCode": 200, "counter": 6, "millis1": [1651383676477, 1651383676520, 1651383676563, 1651383676643, 1651383676691, 1651383676767], "millis2": [1651383679540, 1651383679944, 1651383680062, 1651383680149, 1651383680260, 1651383680392], "source_id": "5", "detect_prob": 2, "values": [6, 7, 8, 9, 10, 11], "body": "\"Download/Split/Upload Successful!\""}
+4
+Extract
+********************
+b'{"statusCode": 200, "counter": 6, "millis1": [1651383676477, 1651383676520, 1651383676563, 1651383676643, 1651383676691, 1651383676767], "millis2": [1651383679540, 1651383679944, 1651383680062, 1651383680149, 1651383680260, 1651383680392], "source_id": "5", "detect_prob": 2, "values": [6, 7, 8, 9, 10, 11], "body": "\\"Download/Split/Upload Successful!\\""}'
+********************
+Executing Extract with {"millis": [1651383676892, 1651383677010, 1651383677102, 1651383677152, 1651383677204, 1651383677331], "source_id": "5", "detect_prob": 2, "values": [12, 13, 14, 15, 16, 17]}
+ adding data to shared_dict_payloads["Classify"]: {"statusCode": 200, "counter": 6, "millis1": [1651383676892, 1651383677010, 1651383677102, 1651383677152, 1651383677204, 1651383677331], "millis2": [1651383680129, 1651383680564, 1651383680652, 1651383680756, 1651383680835, 1651383680939], "source_id": "5", "detect_prob": 2, "values": [12, 13, 14, 15, 16, 17], "body": "\"Download/Split/Upload Successful!\""}
+5
+Extract
+********************
+b'{"statusCode": 200, "counter": 6, "millis1": [1651383676892, 1651383677010, 1651383677102, 1651383677152, 1651383677204, 1651383677331], "millis2": [1651383680129, 1651383680564, 1651383680652, 1651383680756, 1651383680835, 1651383680939], "source_id": "5", "detect_prob": 2, "values": [12, 13, 14, 15, 16, 17], "body": "\\"Download/Split/Upload Successful!\\""}'
+********************
+40981 Done Extract
+40981 entered Classify
+**** found Classify in dict_payloads
+num instances of Classify are: 5
+Executing Classify with {"statusCode": 200, "counter": 6, "millis1": [1651383676477, 1651383676520, 1651383676563, 1651383676643, 1651383676691, 1651383676767], "millis2": [1651383679540, 1651383679944, 1651383680062, 1651383680149, 1651383680260, 1651383680392], "source_id": "5", "detect_prob": 2, "values": [6, 7, 8, 9, 10, 11], "body": "\"Download/Split/Upload Successful!\""}
+done!
+Classify
+********************
+b'{"duration": "6790.044677734375", "values": "[6, 7, 8, 9, 10, 11]"}'
+********************
+Executing Classify with {"statusCode": 200, "counter": 6, "millis1": [1651383675893, 1651383675981, 1651383676080, 1651383676178, 1651383676281, 1651383676400], "millis2": [1651383679516, 1651383679874, 1651383679991, 1651383680101, 1651383680236, 1651383680330], "source_id": "5", "detect_prob": 2, "values": [0, 1, 2, 3, 4, 5], "body": "\"Download/Split/Upload Successful!\""}
+done!
+Classify
+********************
+b'{"duration": "6992.81640625", "values": "[0, 1, 2, 3, 4, 5]"}'
+********************
+Executing Classify with {"statusCode": 200, "counter": 6, "millis1": [1651383677869, 1651383677916, 1651383677967, 1651383678018, 1651383678071, 1651383678126], "millis2": [1651383679419, 1651383679786, 1651383679868, 1651383679978, 1651383680074, 1651383680159], "source_id": "5", "detect_prob": 2, "values": [24, 25, 26, 27, 28, 29], "body": "\"Download/Split/Upload Successful!\""}
+done!
+Classify
+********************
+b'{"duration": "6850.9580078125", "values": "[24, 25, 26, 27, 28, 29]"}'
+********************
+Executing Classify with {"statusCode": 200, "counter": 6, "millis1": [1651383677430, 1651383677490, 1651383677579, 1651383677652, 1651383677750, 1651383677822], "millis2": [1651383679600, 1651383679922, 1651383680015, 1651383680092, 1651383680163, 1651383680262], "source_id": "5", "detect_prob": 2, "values": [18, 19, 20, 21, 22, 23], "body": "\"Download/Split/Upload Successful!\""}
+done!
+Classify
+********************
+b'{"duration": "7749.951171875", "values": "[18, 19, 20, 21, 22, 23]"}'
+********************
+Executing Classify with {"statusCode": 200, "counter": 6, "millis1": [1651383676892, 1651383677010, 1651383677102, 1651383677152, 1651383677204, 1651383677331], "millis2": [1651383680129, 1651383680564, 1651383680652, 1651383680756, 1651383680835, 1651383680939], "source_id": "5", "detect_prob": 2, "values": [12, 13, 14, 15, 16, 17], "body": "\"Download/Split/Upload Successful!\""}
+done!
+Classify
+********************
+b'{"duration": "8685.7744140625", "values": "[12, 13, 14, 15, 16, 17]"}'
+********************
+E2E Latenct : 19.95780086517334 seconds 
+========================

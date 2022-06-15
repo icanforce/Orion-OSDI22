@@ -1,0 +1,13 @@
+{
+  "Name": "f1_only",
+  "StartAt": ["F1"],
+  "Functions": {
+    "F1": {
+      "NumContainers": 1,
+      "Next": [],
+      "WarmExecutionTime": 3,
+      "ColdExecutionTime": 10,
+      "InitialMemorySize": 1792
+    }
+  }
+}

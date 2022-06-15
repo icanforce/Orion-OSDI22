@@ -1,0 +1,24 @@
+{
+  "Name": "f1_f2_serial",
+  "StartAt": ["F1"],
+  "Functions": {
+    "F1": {
+      "NumContainers": 1,
+      "Next": ["F2"],
+      "ExecDuration": [6, 16],
+      "ExecDurationProb": [0.9, 0.1],
+      "InitDuration": [14, 24],
+      "InitDurationProb": [0.9, 0.1],
+      "InitialMemorySize": 1792
+    },
+    "F2": {
+      "NumContainers": 2,
+      "ExecDuration": [3, 5],
+      "ExecDurationProb": [0.9, 0.1],
+      "InitDuration": [7, 12],
+      "InitDurationProb": [0.9, 0.1],
+      "InitialMemorySize": 1792,
+      "Next": []
+    }
+  }
+}

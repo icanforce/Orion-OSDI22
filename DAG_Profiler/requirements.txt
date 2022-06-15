@@ -1,0 +1,4 @@
+1- Required libraries: boto3(1.16.50), json, logging
+2- Runtime: Pyhton3.7
+3- AWS CLI version aws-cli/1.19.28 or higher 
+4- Users must verify that .aws/credentials exists with all the AWS access credentials

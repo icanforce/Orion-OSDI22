@@ -1,0 +1,20 @@
+{
+  "Name": "Parallel DAG",
+  "StartAt": ["F1", "F2"],
+  "Functions": {
+    "F1": {
+      "NumContainers": 1,
+      "Next": [],
+      "WarmExecutionTime": 0.5,
+      "ColdExecutionTime": 1,
+      "InitialMemorySize": 1792
+    },
+    "F2": {
+      "NumContainers": 1,
+      "WarmExecutionTime": 0.5,
+      "ColdExecutionTime": 1.5,
+      "InitialMemorySize": 1792,
+      "Next": []
+    }
+  }
+}

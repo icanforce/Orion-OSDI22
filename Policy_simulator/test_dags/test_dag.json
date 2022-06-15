@@ -1,0 +1,40 @@
+{
+  "Comment": "MapReduce DAG",
+  "StartAt": "Map_Parallel",
+  "States": {
+    "Map_Parallel": {
+      "Type": "Map",
+      "ItemsPath": "$.mapInputs",
+      "ResultPath": "$.mapResults",
+      "MaxConcurrency": 100,
+      "Iterator": {
+        "StartAt": "Map_Sort",
+        "States": {
+          "Map_Sort": {
+            "Type": "Task",
+            "Resource": "arn:aws:lambda:us-west-1:739957588982:function:map_sort_multithreaded",
+            "End": true
+          }
+        }
+      },
+      "Next": "Reduce_Parallel"
+    },
+    "Reduce_Parallel": {
+      "Type": "Map",
+      "ItemsPath": "$.reduceInputs",
+      "ResultPath": "$.reduceResults",
+      "MaxConcurrency": 100,
+      "Iterator": {
+        "StartAt": "Reduce_Sort",
+        "States": {
+          "Reduce_Sort": {
+            "Type": "Task",
+            "Resource": "arn:aws:lambda:us-west-1:739957588982:function:reduce_sort_multithreaded",
+            "End": true
+          }
+        }
+      },
+      "End": true
+    }
+  }
+}

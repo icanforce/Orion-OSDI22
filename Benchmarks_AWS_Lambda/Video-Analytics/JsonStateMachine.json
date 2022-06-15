@@ -1,0 +1,33 @@
+{
+  "Comment": "Video Analytics DAG with varying Degree Of Parallelism",
+  "StartAt": "Split",
+  "States": {
+    "Split": {
+      "Type": "Task",
+      "Resource": "XXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "Next": "Extract_Map"
+    },
+    "Extract_Map" : {
+      "Type": "Map",
+      "InputPath": "$.detail",
+      "ItemsPath": "$.indeces",
+      "MaxConcurrency": 100,
+      "Iterator": {
+         "StartAt": "Extract",
+         "States": {
+            "Extract": {
+             "Type" : "Task",
+             "Resource": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+             "Next": "ObjectDetectUpload"
+              },
+            "ObjectDetectUpload": {
+             "Type" : "Task",
+             "Resource": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+             "End": true
+              } 
+         }
+      },
+      "End": true
+    } 
+  }
+}

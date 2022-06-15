@@ -1,0 +1,394 @@
+Starting prewarmer => 141083
+Starting consumer => 141084
+141084 got ParamTune
+**** found ParamTune in dict_payloads
+num instances of ParamTune are: 0
+141084 got ParamTune
+141084 got PCA
+**** found PCA in dict_payloads
+num instances of PCA are: 1
+***** executing PCA payload { "bundle_size": 4,"key1": "300" }
+Prewarmer 141083 exiting...
+Executing PCA with { "bundle_size": 4,"key1": "300" }
+{'StatusCode': 200, 'Payload': <botocore.response.StreamingBody object at 0x7f097aa35470>, 'ExecutedVersion': '$LATEST', 'ResponseMetadata': {'RequestId': 'f7cc33d4-bbfc-408b-bc18-fa31fdc44b76', 'HTTPHeaders': {'date': 'Mon, 16 May 2022 01:50:04 GMT', 'x-amz-executed-version': '$LATEST', 'connection': 'keep-alive', 'x-amzn-requestid': 'f7cc33d4-bbfc-408b-bc18-fa31fdc44b76', 'content-length': '467', 'x-amzn-trace-id': 'root=1-6281adbc-5c153782418666d35b59032a;sampled=0', 'x-amzn-remapped-content-length': '0', 'content-type': 'application/json'}, 'RetryAttempts': 0, 'HTTPStatusCode': 200}}
+PCA
+********************
+b'{"detail": {"indeces": [{"mod_index": 1, "PCA_Download": 248, "PCA_Process": 14567, "PCA_Upload": 727, "key1": "inv_300", "num_of_trees": [5, 10, 5, 10], "max_depth": [10, 10, 10, 10], "feature_fraction": [0.25, 0.25, 0.5, 0.5], "threads": 6}, {"mod_index": 2, "PCA_Download": 248, "PCA_Process": 14567, "PCA_Upload": 727, "key1": "inv_300", "num_of_trees": [5, 10, 5, 10], "max_depth": [10, 10, 10, 10], "feature_fraction": [0.75, 0.75, 0.95, 0.95], "threads": 6}]}}'
+********************
+141084 got PCA
+141084 got CombineModels
+**** found CombineModels in dict_payloads
+num instances of CombineModels are: 1
+***** executing CombineModels payload []
+Executing CombineModels with []
+{'StatusCode': 200, 'Payload': <botocore.response.StreamingBody object at 0x7f097aa36518>, 'ExecutedVersion': '$LATEST', 'ResponseMetadata': {'RequestId': 'f4d70b7f-1269-4811-93d1-a36b8c610e5c', 'HTTPHeaders': {'date': 'Mon, 16 May 2022 01:50:04 GMT', 'x-amz-executed-version': '$LATEST', 'connection': 'keep-alive', 'x-amzn-requestid': 'f4d70b7f-1269-4811-93d1-a36b8c610e5c', 'content-length': '114', 'x-amzn-trace-id': 'root=1-6281adcc-27c710722ccbd0c0504bd9a8;sampled=0', 'x-amzn-remapped-content-length': '0', 'content-type': 'application/json'}, 'RetryAttempts': 0, 'HTTPStatusCode': 200}}
+CombineModels
+********************
+b'{"statusCode": 200, "accuracy": [], "returned_latecy": [], "all_data": "\\"[]\\"", "body": "\\"Hello from Lambda!\\""}'
+********************
+E2E Latency:16.438776969909668 seconds
+========================
+Starting prewarmer => 141165
+Starting consumer => 141166
+141166 got PCA
+**** found PCA in dict_payloads
+num instances of PCA are: 1
+***** executing PCA payload { "bundle_size": 4,"key1": "300" }
+Prewarmer 141165 exiting...
+Executing PCA with { "bundle_size": 4,"key1": "300" }
+{'ResponseMetadata': {'HTTPHeaders': {'connection': 'keep-alive', 'content-type': 'application/json', 'x-amz-executed-version': '$LATEST', 'x-amzn-trace-id': 'root=1-6281ae0e-45e910db377d0b5f21fcf452;sampled=0', 'x-amzn-requestid': 'a7bd9d6f-3763-4b10-941d-af65a8329a06', 'date': 'Mon, 16 May 2022 01:51:19 GMT', 'x-amzn-remapped-content-length': '0', 'content-length': '467'}, 'HTTPStatusCode': 200, 'RetryAttempts': 0, 'RequestId': 'a7bd9d6f-3763-4b10-941d-af65a8329a06'}, 'StatusCode': 200, 'Payload': <botocore.response.StreamingBody object at 0x7f299b46f470>, 'ExecutedVersion': '$LATEST'}
+PCA
+********************
+b'{"detail": {"indeces": [{"mod_index": 1, "PCA_Download": 200, "PCA_Process": 7950, "PCA_Upload": 1018, "key1": "inv_300", "num_of_trees": [5, 10, 5, 10], "max_depth": [10, 10, 10, 10], "feature_fraction": [0.25, 0.25, 0.5, 0.5], "threads": 6}, {"mod_index": 2, "PCA_Download": 200, "PCA_Process": 7950, "PCA_Upload": 1018, "key1": "inv_300", "num_of_trees": [5, 10, 5, 10], "max_depth": [10, 10, 10, 10], "feature_fraction": [0.75, 0.75, 0.95, 0.95], "threads": 6}]}}'
+********************
+141166 got PCA
+141166 got ParamTune
+**** found ParamTune in dict_payloads
+num instances of ParamTune are: 2
+***** executing ParamTune payload {"key1": "inv_300", "feature_fraction": [0.25, 0.25, 0.5, 0.5], "max_depth": [10, 10, 10, 10], "PCA_Process": 7950, "num_of_trees": [5, 10, 5, 10], "PCA_Upload": 1018, "mod_index": 1, "PCA_Download": 200, "threads": 6}
+***** executing ParamTune payload {"key1": "inv_300", "feature_fraction": [0.75, 0.75, 0.95, 0.95], "max_depth": [10, 10, 10, 10], "PCA_Process": 7950, "num_of_trees": [5, 10, 5, 10], "PCA_Upload": 1018, "mod_index": 2, "PCA_Download": 200, "threads": 6}
+Executing ParamTune with {"key1": "inv_300", "feature_fraction": [0.75, 0.75, 0.95, 0.95], "max_depth": [10, 10, 10, 10], "PCA_Process": 7950, "num_of_trees": [5, 10, 5, 10], "PCA_Upload": 1018, "mod_index": 2, "PCA_Download": 200, "threads": 6}
+Executing ParamTune with {"key1": "inv_300", "feature_fraction": [0.25, 0.25, 0.5, 0.5], "max_depth": [10, 10, 10, 10], "PCA_Process": 7950, "num_of_trees": [5, 10, 5, 10], "PCA_Upload": 1018, "mod_index": 1, "PCA_Download": 200, "threads": 6}
+141166 got ParamTune
+141166 got CombineModels
+**** found CombineModels in dict_payloads
+num instances of CombineModels are: 1
+***** executing CombineModels payload []
+Executing CombineModels with []
+{'ResponseMetadata': {'HTTPHeaders': {'connection': 'keep-alive', 'content-type': 'application/json', 'x-amz-executed-version': '$LATEST', 'x-amzn-trace-id': 'root=1-6281af4c-67e8b1e352ff07020fdc1522;sampled=0', 'x-amzn-requestid': '9f3ae699-1ce4-4f74-9dd2-06a2c32d41b4', 'date': 'Mon, 16 May 2022 01:56:28 GMT', 'x-amzn-remapped-content-length': '0', 'content-length': '114'}, 'HTTPStatusCode': 200, 'RetryAttempts': 0, 'RequestId': '9f3ae699-1ce4-4f74-9dd2-06a2c32d41b4'}, 'StatusCode': 200, 'Payload': <botocore.response.StreamingBody object at 0x7f299b470518>, 'ExecutedVersion': '$LATEST'}
+CombineModels
+********************
+b'{"statusCode": 200, "accuracy": [], "returned_latecy": [], "all_data": "\\"[]\\"", "body": "\\"Hello from Lambda!\\""}'
+********************
+E2E Latency:318.3850898742676 seconds
+========================
+Starting prewarmer => 141266
+Starting consumer => 141267
+141267 got ParamTune
+**** found ParamTune in dict_payloads
+num instances of ParamTune are: 0
+141267 got ParamTune
+141267 got PCA
+**** found PCA in dict_payloads
+num instances of PCA are: 1
+***** executing PCA payload { "bundle_size": 4,"key1": "300" }
+Prewarmer 141266 exiting...
+Executing PCA with { "bundle_size": 4,"key1": "300" }
+{'StatusCode': 200, 'Payload': <botocore.response.StreamingBody object at 0x7fba36ef74a8>, 'ExecutedVersion': '$LATEST', 'ResponseMetadata': {'HTTPStatusCode': 200, 'RetryAttempts': 0, 'HTTPHeaders': {'connection': 'keep-alive', 'date': 'Mon, 16 May 2022 01:57:41 GMT', 'content-type': 'application/json', 'x-amz-executed-version': '$LATEST', 'content-length': '465', 'x-amzn-requestid': '0a3058e5-2f91-476f-a038-e4db36b078ff', 'x-amzn-remapped-content-length': '0', 'x-amzn-trace-id': 'root=1-6281af8d-2a3257ab3684c12f2c6a4a80;sampled=0'}, 'RequestId': '0a3058e5-2f91-476f-a038-e4db36b078ff'}}
+PCA
+********************
+b'{"detail": {"indeces": [{"mod_index": 1, "PCA_Download": 168, "PCA_Process": 7056, "PCA_Upload": 838, "key1": "inv_300", "num_of_trees": [5, 10, 5, 10], "max_depth": [10, 10, 10, 10], "feature_fraction": [0.25, 0.25, 0.5, 0.5], "threads": 6}, {"mod_index": 2, "PCA_Download": 168, "PCA_Process": 7056, "PCA_Upload": 838, "key1": "inv_300", "num_of_trees": [5, 10, 5, 10], "max_depth": [10, 10, 10, 10], "feature_fraction": [0.75, 0.75, 0.95, 0.95], "threads": 6}]}}'
+********************
+141267 got PCA
+141267 got CombineModels
+**** found CombineModels in dict_payloads
+num instances of CombineModels are: 1
+***** executing CombineModels payload []
+Executing CombineModels with []
+{'StatusCode': 200, 'Payload': <botocore.response.StreamingBody object at 0x7fba36ef8550>, 'ExecutedVersion': '$LATEST', 'ResponseMetadata': {'HTTPStatusCode': 200, 'RetryAttempts': 0, 'HTTPHeaders': {'connection': 'keep-alive', 'date': 'Mon, 16 May 2022 01:57:42 GMT', 'content-type': 'application/json', 'x-amz-executed-version': '$LATEST', 'content-length': '114', 'x-amzn-requestid': '2eb0bd7b-cb2e-490a-8294-3da20c08174c', 'x-amzn-remapped-content-length': '0', 'x-amzn-trace-id': 'root=1-6281af96-33511e0a4e3de33618b72fe5;sampled=0'}, 'RequestId': '2eb0bd7b-cb2e-490a-8294-3da20c08174c'}}
+CombineModels
+********************
+b'{"statusCode": 200, "accuracy": [], "returned_latecy": [], "all_data": "\\"[]\\"", "body": "\\"Hello from Lambda!\\""}'
+********************
+E2E Latency:8.943663358688354 seconds
+========================
+Starting prewarmer => 141348
+Starting consumer => 141349
+141349 got PCA
+**** found PCA in dict_payloads
+num instances of PCA are: 1
+***** executing PCA payload { "bundle_size": 4,"key1": "300" }
+Prewarmer 141348 exiting...
+Executing PCA with { "bundle_size": 4,"key1": "300" }
+{'Payload': <botocore.response.StreamingBody object at 0x7fc45b8204a8>, 'ExecutedVersion': '$LATEST', 'StatusCode': 200, 'ResponseMetadata': {'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amz-executed-version': '$LATEST', 'x-amzn-trace-id': 'root=1-6281afd8-2183d19b52b535d849a78b88;sampled=0', 'connection': 'keep-alive', 'date': 'Mon, 16 May 2022 01:58:56 GMT', 'x-amzn-remapped-content-length': '0', 'x-amzn-requestid': '72003da3-4ba7-49af-916a-52dbdd06badf', 'content-length': '465', 'content-type': 'application/json'}, 'RetryAttempts': 0, 'RequestId': '72003da3-4ba7-49af-916a-52dbdd06badf'}}
+PCA
+********************
+b'{"detail": {"indeces": [{"mod_index": 1, "PCA_Download": 203, "PCA_Process": 7686, "PCA_Upload": 913, "key1": "inv_300", "num_of_trees": [5, 10, 5, 10], "max_depth": [10, 10, 10, 10], "feature_fraction": [0.25, 0.25, 0.5, 0.5], "threads": 6}, {"mod_index": 2, "PCA_Download": 203, "PCA_Process": 7686, "PCA_Upload": 913, "key1": "inv_300", "num_of_trees": [5, 10, 5, 10], "max_depth": [10, 10, 10, 10], "feature_fraction": [0.75, 0.75, 0.95, 0.95], "threads": 6}]}}'
+********************
+141349 got PCA
+141349 got ParamTune
+**** found ParamTune in dict_payloads
+num instances of ParamTune are: 2
+***** executing ParamTune payload {"PCA_Download": 203, "num_of_trees": [5, 10, 5, 10], "mod_index": 1, "PCA_Upload": 913, "threads": 6, "PCA_Process": 7686, "max_depth": [10, 10, 10, 10], "key1": "inv_300", "feature_fraction": [0.25, 0.25, 0.5, 0.5]}
+***** executing ParamTune payload {"PCA_Download": 203, "num_of_trees": [5, 10, 5, 10], "mod_index": 2, "PCA_Upload": 913, "threads": 6, "PCA_Process": 7686, "max_depth": [10, 10, 10, 10], "key1": "inv_300", "feature_fraction": [0.75, 0.75, 0.95, 0.95]}
+Executing ParamTune with {"PCA_Download": 203, "num_of_trees": [5, 10, 5, 10], "mod_index": 1, "PCA_Upload": 913, "threads": 6, "PCA_Process": 7686, "max_depth": [10, 10, 10, 10], "key1": "inv_300", "feature_fraction": [0.25, 0.25, 0.5, 0.5]}
+{'Payload': <botocore.response.StreamingBody object at 0x7fc45b821518>, 'ExecutedVersion': '$LATEST', 'StatusCode': 200, 'ResponseMetadata': {'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amz-executed-version': '$LATEST', 'x-amzn-trace-id': 'root=1-6281afe1-1b88413214d0e816136e6651;sampled=0', 'connection': 'keep-alive', 'date': 'Mon, 16 May 2022 01:59:04 GMT', 'x-amzn-remapped-content-length': '0', 'x-amzn-requestid': '6ef6b614-7a82-4f56-8564-fc33259c246f', 'content-length': '381', 'content-type': 'application/json'}, 'RetryAttempts': 0, 'RequestId': '6ef6b614-7a82-4f56-8564-fc33259c246f'}}
+ adding data to shared_dict_payloads["CombineModels"]: {"statusCode": 200, "body": "\"Done Training Threads = 6\"", "key1": "inv_300", "duration": 7347, "trees_max_depthes": ["5_10_0.25", "10_10_0.25", "5_10_0.5", "10_10_0.5"], "accuracies": [0.9008, 0.9682, 0.9354, 0.975], "process_times": [705, 1434, 1197, 2137], "upload_times": [303, 62, 141, 89], "download_times": 256, "PCA_Download": 203, "PCA_Process": 7686, "PCA_Upload": 913}
+1
+ParamTune
+********************
+b'{"statusCode": 200, "body": "\\"Done Training Threads = 6\\"", "key1": "inv_300", "duration": 7347, "trees_max_depthes": ["5_10_0.25", "10_10_0.25", "5_10_0.5", "10_10_0.5"], "accuracies": [0.9008, 0.9682, 0.9354, 0.975], "process_times": [705, 1434, 1197, 2137], "upload_times": [303, 62, 141, 89], "download_times": 256, "PCA_Download": 203, "PCA_Process": 7686, "PCA_Upload": 913}'
+********************
+Executing ParamTune with {"PCA_Download": 203, "num_of_trees": [5, 10, 5, 10], "mod_index": 2, "PCA_Upload": 913, "threads": 6, "PCA_Process": 7686, "max_depth": [10, 10, 10, 10], "key1": "inv_300", "feature_fraction": [0.75, 0.75, 0.95, 0.95]}
+{'Payload': <botocore.response.StreamingBody object at 0x7fc45b821588>, 'ExecutedVersion': '$LATEST', 'StatusCode': 200, 'ResponseMetadata': {'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amz-executed-version': '$LATEST', 'x-amzn-trace-id': 'root=1-6281afe1-1b04d9e345f5ac9919780c31;sampled=0', 'connection': 'keep-alive', 'date': 'Mon, 16 May 2022 01:59:09 GMT', 'x-amzn-remapped-content-length': '0', 'x-amzn-requestid': '15e5eae4-0de6-4335-a601-23371b9a9e43', 'content-length': '387', 'content-type': 'application/json'}, 'RetryAttempts': 0, 'RequestId': '15e5eae4-0de6-4335-a601-23371b9a9e43'}}
+ adding data to shared_dict_payloads["CombineModels"]: {"statusCode": 200, "body": "\"Done Training Threads = 6\"", "key1": "inv_300", "duration": 12509, "trees_max_depthes": ["5_10_0.75", "10_10_0.75", "5_10_0.95", "10_10_0.95"], "accuracies": [0.9354, 0.9656, 0.9208, 0.9532], "process_times": [1429, 2856, 1873, 3591], "upload_times": [969, 160, 102, 66], "download_times": 246, "PCA_Download": 203, "PCA_Process": 7686, "PCA_Upload": 913}
+2
+ParamTune
+********************
+b'{"statusCode": 200, "body": "\\"Done Training Threads = 6\\"", "key1": "inv_300", "duration": 12509, "trees_max_depthes": ["5_10_0.75", "10_10_0.75", "5_10_0.95", "10_10_0.95"], "accuracies": [0.9354, 0.9656, 0.9208, 0.9532], "process_times": [1429, 2856, 1873, 3591], "upload_times": [969, 160, 102, 66], "download_times": 246, "PCA_Download": 203, "PCA_Process": 7686, "PCA_Upload": 913}'
+********************
+141349 got ParamTune
+141349 got CombineModels
+**** found CombineModels in dict_payloads
+num instances of CombineModels are: 1
+***** executing CombineModels payload [{"statusCode": 200, "body": "Done Training Threads = 6", "key1": "inv_300", "duration": 7347, "trees_max_depthes": ["5_10_0.25", "10_10_0.25", "5_10_0.5", "10_10_0.5"], "accuracies": [0.9008, 0.9682, 0.9354, 0.975], "process_times": [705, 1434, 1197, 2137], "upload_times": [303, 62, 141, 89], "download_times": 256, "PCA_Download": 203, "PCA_Process": 7686, "PCA_Upload": 913}, {"statusCode": 200, "body": "Done Training Threads = 6", "key1": "inv_300", "duration": 12509, "trees_max_depthes": ["5_10_0.75", "10_10_0.75", "5_10_0.95", "10_10_0.95"], "accuracies": [0.9354, 0.9656, 0.9208, 0.9532], "process_times": [1429, 2856, 1873, 3591], "upload_times": [969, 160, 102, 66], "download_times": 246, "PCA_Download": 203, "PCA_Process": 7686, "PCA_Upload": 913}]
+Executing CombineModels with [{"statusCode": 200, "body": "Done Training Threads = 6", "key1": "inv_300", "duration": 7347, "trees_max_depthes": ["5_10_0.25", "10_10_0.25", "5_10_0.5", "10_10_0.5"], "accuracies": [0.9008, 0.9682, 0.9354, 0.975], "process_times": [705, 1434, 1197, 2137], "upload_times": [303, 62, 141, 89], "download_times": 256, "PCA_Download": 203, "PCA_Process": 7686, "PCA_Upload": 913}, {"statusCode": 200, "body": "Done Training Threads = 6", "key1": "inv_300", "duration": 12509, "trees_max_depthes": ["5_10_0.75", "10_10_0.75", "5_10_0.95", "10_10_0.95"], "accuracies": [0.9354, 0.9656, 0.9208, 0.9532], "process_times": [1429, 2856, 1873, 3591], "upload_times": [969, 160, 102, 66], "download_times": 246, "PCA_Download": 203, "PCA_Process": 7686, "PCA_Upload": 913}]
+{'Payload': <botocore.response.StreamingBody object at 0x7fc45b821518>, 'ExecutedVersion': '$LATEST', 'StatusCode': 200, 'ResponseMetadata': {'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amz-executed-version': '$LATEST', 'x-amzn-trace-id': 'root=1-6281afee-7d3d08e41fcf46f43500bfd0;sampled=0', 'connection': 'keep-alive', 'date': 'Mon, 16 May 2022 01:59:10 GMT', 'x-amzn-remapped-content-length': '0', 'x-amzn-requestid': '6305bff9-c50c-440d-be03-2626af0a7ffa', 'content-length': '1041', 'content-type': 'application/json'}, 'RetryAttempts': 0, 'RequestId': '6305bff9-c50c-440d-be03-2626af0a7ffa'}}
+CombineModels
+********************
+b'{"statusCode": 200, "accuracy": ["5_10_0.25", "5_10_0.95", "5_10_0.5", "5_10_0.75", "10_10_0.95", "10_10_0.75", "10_10_0.25", "10_10_0.5"], "returned_latecy": [0.9008, 0.9208, 0.9354, 0.9354, 0.9532, 0.9656, 0.9682, 0.975], "all_data": "\\"[{\'statusCode\': 200, \'body\': \'Done Training Threads = 6\', \'key1\': \'inv_300\', \'duration\': 7347, \'trees_max_depthes\': [\'5_10_0.25\', \'10_10_0.25\', \'5_10_0.5\', \'10_10_0.5\'], \'accuracies\': [0.9008, 0.9682, 0.9354, 0.975], \'process_times\': [705, 1434, 1197, 2137], \'upload_times\': [303, 62, 141, 89], \'download_times\': 256, \'PCA_Download\': 203, \'PCA_Process\': 7686, \'PCA_Upload\': 913}, {\'statusCode\': 200, \'body\': \'Done Training Threads = 6\', \'key1\': \'inv_300\', \'duration\': 12509, \'trees_max_depthes\': [\'5_10_0.75\', \'10_10_0.75\', \'5_10_0.95\', \'10_10_0.95\'], \'accuracies\': [0.9354, 0.9656, 0.9208, 0.9532], \'process_times\': [1429, 2856, 1873, 3591], \'upload_times\': [969, 160, 102, 66], \'download_times\': 246, \'PCA_Download\': 203, \'PCA_Process\': 7686, \'PCA_Upload\': 913}]\\"", "body": "\\"Hello from Lambda!\\""}'
+********************
+E2E Latency:22.55543279647827 seconds
+========================
+Starting prewarmer => 141442
+Starting consumer => 141443
+141443 got ParamTune
+**** found ParamTune in dict_payloads
+num instances of ParamTune are: 0
+141443 got ParamTune
+141443 got PCA
+**** found PCA in dict_payloads
+num instances of PCA are: 1
+***** executing PCA payload { "bundle_size": 4,"key1": "300" }
+Prewarmer 141442 exiting...
+Executing PCA with { "bundle_size": 4,"key1": "300" }
+{'StatusCode': 200, 'Payload': <botocore.response.StreamingBody object at 0x7ff68a54b470>, 'ExecutedVersion': '$LATEST', 'ResponseMetadata': {'RequestId': '28db1d2f-1af4-4180-bfef-511a258f7b55', 'HTTPStatusCode': 200, 'RetryAttempts': 0, 'HTTPHeaders': {'date': 'Mon, 16 May 2022 02:00:25 GMT', 'connection': 'keep-alive', 'content-type': 'application/json', 'x-amz-executed-version': '$LATEST', 'x-amzn-requestid': '28db1d2f-1af4-4180-bfef-511a258f7b55', 'x-amzn-remapped-content-length': '0', 'x-amzn-trace-id': 'root=1-6281b030-0605b83e71fb42183785af65;sampled=0', 'content-length': '465'}}}
+PCA
+********************
+b'{"detail": {"indeces": [{"mod_index": 1, "PCA_Download": 202, "PCA_Process": 7779, "PCA_Upload": 902, "key1": "inv_300", "num_of_trees": [5, 10, 5, 10], "max_depth": [10, 10, 10, 10], "feature_fraction": [0.25, 0.25, 0.5, 0.5], "threads": 6}, {"mod_index": 2, "PCA_Download": 202, "PCA_Process": 7779, "PCA_Upload": 902, "key1": "inv_300", "num_of_trees": [5, 10, 5, 10], "max_depth": [10, 10, 10, 10], "feature_fraction": [0.75, 0.75, 0.95, 0.95], "threads": 6}]}}'
+********************
+141443 got PCA
+141443 got CombineModels
+**** found CombineModels in dict_payloads
+num instances of CombineModels are: 1
+***** executing CombineModels payload []
+Executing CombineModels with []
+{'StatusCode': 200, 'Payload': <botocore.response.StreamingBody object at 0x7ff68a54c518>, 'ExecutedVersion': '$LATEST', 'ResponseMetadata': {'RequestId': '6f5220f2-9d0f-4eaf-a176-00387eb0abf8', 'HTTPStatusCode': 200, 'RetryAttempts': 0, 'HTTPHeaders': {'date': 'Mon, 16 May 2022 02:00:25 GMT', 'connection': 'keep-alive', 'content-type': 'application/json', 'x-amz-executed-version': '$LATEST', 'x-amzn-requestid': '6f5220f2-9d0f-4eaf-a176-00387eb0abf8', 'x-amzn-remapped-content-length': '0', 'x-amzn-trace-id': 'root=1-6281b039-7fb70e8846c9ed577c61ae77;sampled=0', 'content-length': '114'}}}
+CombineModels
+********************
+b'{"statusCode": 200, "accuracy": [], "returned_latecy": [], "all_data": "\\"[]\\"", "body": "\\"Hello from Lambda!\\""}'
+********************
+E2E Latency:9.761699676513672 seconds
+========================
+Starting prewarmer => 141530
+Starting consumer => 141531
+141531 got PCA
+**** found PCA in dict_payloads
+num instances of PCA are: 1
+***** executing PCA payload { "bundle_size": 4,"key1": "300" }
+Prewarmer 141530 exiting...
+Executing PCA with { "bundle_size": 4,"key1": "300" }
+{'Payload': <botocore.response.StreamingBody object at 0x7f3fa056b4a8>, 'StatusCode': 200, 'ResponseMetadata': {'RequestId': '9ab4c0dd-1386-4d34-bcea-ae491d02d8f5', 'RetryAttempts': 0, 'HTTPHeaders': {'x-amz-executed-version': '$LATEST', 'x-amzn-trace-id': 'root=1-6281b07b-10602e9b7def008026ca1808;sampled=0', 'content-length': '465', 'connection': 'keep-alive', 'date': 'Mon, 16 May 2022 02:01:40 GMT', 'x-amzn-remapped-content-length': '0', 'x-amzn-requestid': '9ab4c0dd-1386-4d34-bcea-ae491d02d8f5', 'content-type': 'application/json'}, 'HTTPStatusCode': 200}, 'ExecutedVersion': '$LATEST'}
+PCA
+********************
+b'{"detail": {"indeces": [{"mod_index": 1, "PCA_Download": 176, "PCA_Process": 7899, "PCA_Upload": 892, "key1": "inv_300", "num_of_trees": [5, 10, 5, 10], "max_depth": [10, 10, 10, 10], "feature_fraction": [0.25, 0.25, 0.5, 0.5], "threads": 6}, {"mod_index": 2, "PCA_Download": 176, "PCA_Process": 7899, "PCA_Upload": 892, "key1": "inv_300", "num_of_trees": [5, 10, 5, 10], "max_depth": [10, 10, 10, 10], "feature_fraction": [0.75, 0.75, 0.95, 0.95], "threads": 6}]}}'
+********************
+141531 got PCA
+141531 got ParamTune
+**** found ParamTune in dict_payloads
+num instances of ParamTune are: 2
+***** executing ParamTune payload {"key1": "inv_300", "PCA_Process": 7899, "feature_fraction": [0.25, 0.25, 0.5, 0.5], "PCA_Download": 176, "mod_index": 1, "max_depth": [10, 10, 10, 10], "num_of_trees": [5, 10, 5, 10], "PCA_Upload": 892, "threads": 6}
+***** executing ParamTune payload {"key1": "inv_300", "PCA_Process": 7899, "feature_fraction": [0.75, 0.75, 0.95, 0.95], "PCA_Download": 176, "mod_index": 2, "max_depth": [10, 10, 10, 10], "num_of_trees": [5, 10, 5, 10], "PCA_Upload": 892, "threads": 6}
+Executing ParamTune with {"key1": "inv_300", "PCA_Process": 7899, "feature_fraction": [0.25, 0.25, 0.5, 0.5], "PCA_Download": 176, "mod_index": 1, "max_depth": [10, 10, 10, 10], "num_of_trees": [5, 10, 5, 10], "PCA_Upload": 892, "threads": 6}
+{'Payload': <botocore.response.StreamingBody object at 0x7f3fa056c518>, 'StatusCode': 200, 'ResponseMetadata': {'RequestId': '0e46ca77-df1c-42e0-8a55-d8cbb87434e1', 'RetryAttempts': 0, 'HTTPHeaders': {'x-amz-executed-version': '$LATEST', 'x-amzn-trace-id': 'root=1-6281b084-132377e230272e78387eabd4;sampled=0', 'content-length': '383', 'connection': 'keep-alive', 'date': 'Mon, 16 May 2022 02:01:49 GMT', 'x-amzn-remapped-content-length': '0', 'x-amzn-requestid': '0e46ca77-df1c-42e0-8a55-d8cbb87434e1', 'content-type': 'application/json'}, 'HTTPStatusCode': 200}, 'ExecutedVersion': '$LATEST'}
+ adding data to shared_dict_payloads["CombineModels"]: {"statusCode": 200, "body": "\"Done Training Threads = 6\"", "key1": "inv_300", "duration": 8850, "trees_max_depthes": ["5_10_0.25", "10_10_0.25", "5_10_0.5", "10_10_0.5"], "accuracies": [0.9008, 0.9682, 0.9354, 0.975], "process_times": [627, 1426, 1337, 2282], "upload_times": [1049, 142, 78, 351], "download_times": 256, "PCA_Download": 176, "PCA_Process": 7899, "PCA_Upload": 892}
+1
+ParamTune
+********************
+b'{"statusCode": 200, "body": "\\"Done Training Threads = 6\\"", "key1": "inv_300", "duration": 8850, "trees_max_depthes": ["5_10_0.25", "10_10_0.25", "5_10_0.5", "10_10_0.5"], "accuracies": [0.9008, 0.9682, 0.9354, 0.975], "process_times": [627, 1426, 1337, 2282], "upload_times": [1049, 142, 78, 351], "download_times": 256, "PCA_Download": 176, "PCA_Process": 7899, "PCA_Upload": 892}'
+********************
+Executing ParamTune with {"key1": "inv_300", "PCA_Process": 7899, "feature_fraction": [0.75, 0.75, 0.95, 0.95], "PCA_Download": 176, "mod_index": 2, "max_depth": [10, 10, 10, 10], "num_of_trees": [5, 10, 5, 10], "PCA_Upload": 892, "threads": 6}
+{'Payload': <botocore.response.StreamingBody object at 0x7f3fa056c588>, 'StatusCode': 200, 'ResponseMetadata': {'RequestId': '30cfb667-c042-4e9b-a0b4-24d98aa38579', 'RetryAttempts': 0, 'HTTPHeaders': {'x-amz-executed-version': '$LATEST', 'x-amzn-trace-id': 'root=1-6281b084-686fcda027ff1af80b7ad92e;sampled=0', 'content-length': '388', 'connection': 'keep-alive', 'date': 'Mon, 16 May 2022 02:01:53 GMT', 'x-amzn-remapped-content-length': '0', 'x-amzn-requestid': '30cfb667-c042-4e9b-a0b4-24d98aa38579', 'content-type': 'application/json'}, 'HTTPStatusCode': 200}, 'ExecutedVersion': '$LATEST'}
+ adding data to shared_dict_payloads["CombineModels"]: {"statusCode": 200, "body": "\"Done Training Threads = 6\"", "key1": "inv_300", "duration": 12878, "trees_max_depthes": ["5_10_0.75", "10_10_0.75", "5_10_0.95", "10_10_0.95"], "accuracies": [0.9354, 0.9656, 0.9208, 0.9532], "process_times": [1453, 3184, 2093, 3425], "upload_times": [559, 161, 106, 139], "download_times": 304, "PCA_Download": 176, "PCA_Process": 7899, "PCA_Upload": 892}
+2
+ParamTune
+********************
+b'{"statusCode": 200, "body": "\\"Done Training Threads = 6\\"", "key1": "inv_300", "duration": 12878, "trees_max_depthes": ["5_10_0.75", "10_10_0.75", "5_10_0.95", "10_10_0.95"], "accuracies": [0.9354, 0.9656, 0.9208, 0.9532], "process_times": [1453, 3184, 2093, 3425], "upload_times": [559, 161, 106, 139], "download_times": 304, "PCA_Download": 176, "PCA_Process": 7899, "PCA_Upload": 892}'
+********************
+141531 got ParamTune
+141531 got CombineModels
+**** found CombineModels in dict_payloads
+num instances of CombineModels are: 1
+***** executing CombineModels payload [{"statusCode": 200, "body": "Done Training Threads = 6", "key1": "inv_300", "duration": 8850, "trees_max_depthes": ["5_10_0.25", "10_10_0.25", "5_10_0.5", "10_10_0.5"], "accuracies": [0.9008, 0.9682, 0.9354, 0.975], "process_times": [627, 1426, 1337, 2282], "upload_times": [1049, 142, 78, 351], "download_times": 256, "PCA_Download": 176, "PCA_Process": 7899, "PCA_Upload": 892}, {"statusCode": 200, "body": "Done Training Threads = 6", "key1": "inv_300", "duration": 12878, "trees_max_depthes": ["5_10_0.75", "10_10_0.75", "5_10_0.95", "10_10_0.95"], "accuracies": [0.9354, 0.9656, 0.9208, 0.9532], "process_times": [1453, 3184, 2093, 3425], "upload_times": [559, 161, 106, 139], "download_times": 304, "PCA_Download": 176, "PCA_Process": 7899, "PCA_Upload": 892}]
+Executing CombineModels with [{"statusCode": 200, "body": "Done Training Threads = 6", "key1": "inv_300", "duration": 8850, "trees_max_depthes": ["5_10_0.25", "10_10_0.25", "5_10_0.5", "10_10_0.5"], "accuracies": [0.9008, 0.9682, 0.9354, 0.975], "process_times": [627, 1426, 1337, 2282], "upload_times": [1049, 142, 78, 351], "download_times": 256, "PCA_Download": 176, "PCA_Process": 7899, "PCA_Upload": 892}, {"statusCode": 200, "body": "Done Training Threads = 6", "key1": "inv_300", "duration": 12878, "trees_max_depthes": ["5_10_0.75", "10_10_0.75", "5_10_0.95", "10_10_0.95"], "accuracies": [0.9354, 0.9656, 0.9208, 0.9532], "process_times": [1453, 3184, 2093, 3425], "upload_times": [559, 161, 106, 139], "download_times": 304, "PCA_Download": 176, "PCA_Process": 7899, "PCA_Upload": 892}]
+{'Payload': <botocore.response.StreamingBody object at 0x7f3fa056c518>, 'StatusCode': 200, 'ResponseMetadata': {'RequestId': '564d6a55-3961-4802-9454-da7db8c784c4', 'RetryAttempts': 0, 'HTTPHeaders': {'x-amz-executed-version': '$LATEST', 'x-amzn-trace-id': 'root=1-6281b091-6f61a57704e3cba76c085468;sampled=0', 'content-length': '1044', 'connection': 'keep-alive', 'date': 'Mon, 16 May 2022 02:01:53 GMT', 'x-amzn-remapped-content-length': '0', 'x-amzn-requestid': '564d6a55-3961-4802-9454-da7db8c784c4', 'content-type': 'application/json'}, 'HTTPStatusCode': 200}, 'ExecutedVersion': '$LATEST'}
+CombineModels
+********************
+b'{"statusCode": 200, "accuracy": ["5_10_0.25", "5_10_0.95", "5_10_0.5", "5_10_0.75", "10_10_0.95", "10_10_0.75", "10_10_0.25", "10_10_0.5"], "returned_latecy": [0.9008, 0.9208, 0.9354, 0.9354, 0.9532, 0.9656, 0.9682, 0.975], "all_data": "\\"[{\'statusCode\': 200, \'body\': \'Done Training Threads = 6\', \'key1\': \'inv_300\', \'duration\': 8850, \'trees_max_depthes\': [\'5_10_0.25\', \'10_10_0.25\', \'5_10_0.5\', \'10_10_0.5\'], \'accuracies\': [0.9008, 0.9682, 0.9354, 0.975], \'process_times\': [627, 1426, 1337, 2282], \'upload_times\': [1049, 142, 78, 351], \'download_times\': 256, \'PCA_Download\': 176, \'PCA_Process\': 7899, \'PCA_Upload\': 892}, {\'statusCode\': 200, \'body\': \'Done Training Threads = 6\', \'key1\': \'inv_300\', \'duration\': 12878, \'trees_max_depthes\': [\'5_10_0.75\', \'10_10_0.75\', \'5_10_0.95\', \'10_10_0.95\'], \'accuracies\': [0.9354, 0.9656, 0.9208, 0.9532], \'process_times\': [1453, 3184, 2093, 3425], \'upload_times\': [559, 161, 106, 139], \'download_times\': 304, \'PCA_Download\': 176, \'PCA_Process\': 7899, \'PCA_Upload\': 892}]\\"", "body": "\\"Hello from Lambda!\\""}'
+********************
+E2E Latency:23.16558313369751 seconds
+========================
+Starting prewarmer => 141627
+Starting consumer => 141628
+141628 got ParamTune
+**** found ParamTune in dict_payloads
+num instances of ParamTune are: 0
+141628 got ParamTune
+141628 got PCA
+**** found PCA in dict_payloads
+num instances of PCA are: 1
+***** executing PCA payload { "bundle_size": 4,"key1": "300" }
+Prewarmer 141627 exiting...
+Executing PCA with { "bundle_size": 4,"key1": "300" }
+{'Payload': <botocore.response.StreamingBody object at 0x7fe953f0f470>, 'ExecutedVersion': '$LATEST', 'StatusCode': 200, 'ResponseMetadata': {'HTTPStatusCode': 200, 'RequestId': '3185b5e8-6840-4cb8-8357-bc28fa7fca2c', 'RetryAttempts': 0, 'HTTPHeaders': {'content-length': '465', 'x-amzn-trace-id': 'root=1-6281b0d3-520c94243ce5b30a335faa44;sampled=0', 'content-type': 'application/json', 'connection': 'keep-alive', 'x-amzn-remapped-content-length': '0', 'x-amz-executed-version': '$LATEST', 'x-amzn-requestid': '3185b5e8-6840-4cb8-8357-bc28fa7fca2c', 'date': 'Mon, 16 May 2022 02:03:08 GMT'}}}
+PCA
+********************
+b'{"detail": {"indeces": [{"mod_index": 1, "PCA_Download": 170, "PCA_Process": 7371, "PCA_Upload": 850, "key1": "inv_300", "num_of_trees": [5, 10, 5, 10], "max_depth": [10, 10, 10, 10], "feature_fraction": [0.25, 0.25, 0.5, 0.5], "threads": 6}, {"mod_index": 2, "PCA_Download": 170, "PCA_Process": 7371, "PCA_Upload": 850, "key1": "inv_300", "num_of_trees": [5, 10, 5, 10], "max_depth": [10, 10, 10, 10], "feature_fraction": [0.75, 0.75, 0.95, 0.95], "threads": 6}]}}'
+********************
+141628 got PCA
+141628 got CombineModels
+**** found CombineModels in dict_payloads
+num instances of CombineModels are: 1
+***** executing CombineModels payload []
+Executing CombineModels with []
+{'Payload': <botocore.response.StreamingBody object at 0x7fe953f10518>, 'ExecutedVersion': '$LATEST', 'StatusCode': 200, 'ResponseMetadata': {'HTTPStatusCode': 200, 'RequestId': '5f696484-1075-4df6-97d8-049c41f875d5', 'RetryAttempts': 0, 'HTTPHeaders': {'content-length': '114', 'x-amzn-trace-id': 'root=1-6281b0dc-1c2138cb52de6be06f192a91;sampled=0', 'content-type': 'application/json', 'connection': 'keep-alive', 'x-amzn-remapped-content-length': '0', 'x-amz-executed-version': '$LATEST', 'x-amzn-requestid': '5f696484-1075-4df6-97d8-049c41f875d5', 'date': 'Mon, 16 May 2022 02:03:08 GMT'}}}
+CombineModels
+********************
+b'{"statusCode": 200, "accuracy": [], "returned_latecy": [], "all_data": "\\"[]\\"", "body": "\\"Hello from Lambda!\\""}'
+********************
+E2E Latency:9.275187253952026 seconds
+========================
+Starting prewarmer => 141709
+Starting consumer => 141710
+141710 got PCA
+**** found PCA in dict_payloads
+num instances of PCA are: 1
+***** executing PCA payload { "bundle_size": 4,"key1": "300" }
+Prewarmer 141709 exiting...
+Executing PCA with { "bundle_size": 4,"key1": "300" }
+{'StatusCode': 200, 'ResponseMetadata': {'RequestId': 'a254793d-58fa-4cf1-a5ba-2b718dc60c68', 'HTTPStatusCode': 200, 'RetryAttempts': 0, 'HTTPHeaders': {'x-amzn-remapped-content-length': '0', 'date': 'Mon, 16 May 2022 02:04:22 GMT', 'x-amzn-trace-id': 'root=1-6281b11e-355f9ee147f3ad373c10998b;sampled=0', 'connection': 'keep-alive', 'content-length': '465', 'content-type': 'application/json', 'x-amzn-requestid': 'a254793d-58fa-4cf1-a5ba-2b718dc60c68', 'x-amz-executed-version': '$LATEST'}}, 'ExecutedVersion': '$LATEST', 'Payload': <botocore.response.StreamingBody object at 0x7f335932b4a8>}
+PCA
+********************
+b'{"detail": {"indeces": [{"mod_index": 1, "PCA_Download": 203, "PCA_Process": 7832, "PCA_Upload": 729, "key1": "inv_300", "num_of_trees": [5, 10, 5, 10], "max_depth": [10, 10, 10, 10], "feature_fraction": [0.25, 0.25, 0.5, 0.5], "threads": 6}, {"mod_index": 2, "PCA_Download": 203, "PCA_Process": 7832, "PCA_Upload": 729, "key1": "inv_300", "num_of_trees": [5, 10, 5, 10], "max_depth": [10, 10, 10, 10], "feature_fraction": [0.75, 0.75, 0.95, 0.95], "threads": 6}]}}'
+********************
+141710 got PCA
+141710 got ParamTune
+**** found ParamTune in dict_payloads
+num instances of ParamTune are: 2
+***** executing ParamTune payload {"threads": 6, "key1": "inv_300", "PCA_Download": 203, "max_depth": [10, 10, 10, 10], "PCA_Process": 7832, "PCA_Upload": 729, "mod_index": 1, "num_of_trees": [5, 10, 5, 10], "feature_fraction": [0.25, 0.25, 0.5, 0.5]}
+***** executing ParamTune payload {"threads": 6, "key1": "inv_300", "PCA_Download": 203, "max_depth": [10, 10, 10, 10], "PCA_Process": 7832, "PCA_Upload": 729, "mod_index": 2, "num_of_trees": [5, 10, 5, 10], "feature_fraction": [0.75, 0.75, 0.95, 0.95]}
+Executing ParamTune with {"threads": 6, "key1": "inv_300", "PCA_Download": 203, "max_depth": [10, 10, 10, 10], "PCA_Process": 7832, "PCA_Upload": 729, "mod_index": 1, "num_of_trees": [5, 10, 5, 10], "feature_fraction": [0.25, 0.25, 0.5, 0.5]}
+{'StatusCode': 200, 'ResponseMetadata': {'RequestId': '824dd035-b7ce-448a-b609-582fce7be09c', 'HTTPStatusCode': 200, 'RetryAttempts': 0, 'HTTPHeaders': {'x-amzn-remapped-content-length': '0', 'date': 'Mon, 16 May 2022 02:04:33 GMT', 'x-amzn-trace-id': 'root=1-6281b127-7cb87a5f7e2deda443f4d602;sampled=0', 'connection': 'keep-alive', 'content-length': '382', 'content-type': 'application/json', 'x-amzn-requestid': '824dd035-b7ce-448a-b609-582fce7be09c', 'x-amz-executed-version': '$LATEST'}}, 'ExecutedVersion': '$LATEST', 'Payload': <botocore.response.StreamingBody object at 0x7f335932c518>}
+ adding data to shared_dict_payloads["CombineModels"]: {"statusCode": 200, "body": "\"Done Training Threads = 6\"", "key1": "inv_300", "duration": 8272, "trees_max_depthes": ["5_10_0.25", "10_10_0.25", "5_10_0.5", "10_10_0.5"], "accuracies": [0.9008, 0.9682, 0.9354, 0.975], "process_times": [743, 1434, 1206, 2254], "upload_times": [652, 95, 122, 130], "download_times": 247, "PCA_Download": 203, "PCA_Process": 7832, "PCA_Upload": 729}
+1
+ParamTune
+********************
+b'{"statusCode": 200, "body": "\\"Done Training Threads = 6\\"", "key1": "inv_300", "duration": 8272, "trees_max_depthes": ["5_10_0.25", "10_10_0.25", "5_10_0.5", "10_10_0.5"], "accuracies": [0.9008, 0.9682, 0.9354, 0.975], "process_times": [743, 1434, 1206, 2254], "upload_times": [652, 95, 122, 130], "download_times": 247, "PCA_Download": 203, "PCA_Process": 7832, "PCA_Upload": 729}'
+********************
+Executing ParamTune with {"threads": 6, "key1": "inv_300", "PCA_Download": 203, "max_depth": [10, 10, 10, 10], "PCA_Process": 7832, "PCA_Upload": 729, "mod_index": 2, "num_of_trees": [5, 10, 5, 10], "feature_fraction": [0.75, 0.75, 0.95, 0.95]}
+{'StatusCode': 200, 'ResponseMetadata': {'RequestId': '43689e74-6945-43de-85c3-a98e2ae34060', 'HTTPStatusCode': 200, 'RetryAttempts': 0, 'HTTPHeaders': {'x-amzn-remapped-content-length': '0', 'date': 'Mon, 16 May 2022 02:04:37 GMT', 'x-amzn-trace-id': 'root=1-6281b127-674e4130220c57d8736b9638;sampled=0', 'connection': 'keep-alive', 'content-length': '388', 'content-type': 'application/json', 'x-amzn-requestid': '43689e74-6945-43de-85c3-a98e2ae34060', 'x-amz-executed-version': '$LATEST'}}, 'ExecutedVersion': '$LATEST', 'Payload': <botocore.response.StreamingBody object at 0x7f335932c588>}
+ adding data to shared_dict_payloads["CombineModels"]: {"statusCode": 200, "body": "\"Done Training Threads = 6\"", "key1": "inv_300", "duration": 12450, "trees_max_depthes": ["5_10_0.75", "10_10_0.75", "5_10_0.95", "10_10_0.95"], "accuracies": [0.9354, 0.9656, 0.9208, 0.9532], "process_times": [1208, 2733, 1829, 3409], "upload_times": [1102, 113, 125, 83], "download_times": 483, "PCA_Download": 203, "PCA_Process": 7832, "PCA_Upload": 729}
+2
+ParamTune
+********************
+b'{"statusCode": 200, "body": "\\"Done Training Threads = 6\\"", "key1": "inv_300", "duration": 12450, "trees_max_depthes": ["5_10_0.75", "10_10_0.75", "5_10_0.95", "10_10_0.95"], "accuracies": [0.9354, 0.9656, 0.9208, 0.9532], "process_times": [1208, 2733, 1829, 3409], "upload_times": [1102, 113, 125, 83], "download_times": 483, "PCA_Download": 203, "PCA_Process": 7832, "PCA_Upload": 729}'
+********************
+141710 got ParamTune
+141710 got CombineModels
+**** found CombineModels in dict_payloads
+num instances of CombineModels are: 1
+***** executing CombineModels payload [{"statusCode": 200, "body": "Done Training Threads = 6", "key1": "inv_300", "duration": 8272, "trees_max_depthes": ["5_10_0.25", "10_10_0.25", "5_10_0.5", "10_10_0.5"], "accuracies": [0.9008, 0.9682, 0.9354, 0.975], "process_times": [743, 1434, 1206, 2254], "upload_times": [652, 95, 122, 130], "download_times": 247, "PCA_Download": 203, "PCA_Process": 7832, "PCA_Upload": 729}, {"statusCode": 200, "body": "Done Training Threads = 6", "key1": "inv_300", "duration": 12450, "trees_max_depthes": ["5_10_0.75", "10_10_0.75", "5_10_0.95", "10_10_0.95"], "accuracies": [0.9354, 0.9656, 0.9208, 0.9532], "process_times": [1208, 2733, 1829, 3409], "upload_times": [1102, 113, 125, 83], "download_times": 483, "PCA_Download": 203, "PCA_Process": 7832, "PCA_Upload": 729}]
+Executing CombineModels with [{"statusCode": 200, "body": "Done Training Threads = 6", "key1": "inv_300", "duration": 8272, "trees_max_depthes": ["5_10_0.25", "10_10_0.25", "5_10_0.5", "10_10_0.5"], "accuracies": [0.9008, 0.9682, 0.9354, 0.975], "process_times": [743, 1434, 1206, 2254], "upload_times": [652, 95, 122, 130], "download_times": 247, "PCA_Download": 203, "PCA_Process": 7832, "PCA_Upload": 729}, {"statusCode": 200, "body": "Done Training Threads = 6", "key1": "inv_300", "duration": 12450, "trees_max_depthes": ["5_10_0.75", "10_10_0.75", "5_10_0.95", "10_10_0.95"], "accuracies": [0.9354, 0.9656, 0.9208, 0.9532], "process_times": [1208, 2733, 1829, 3409], "upload_times": [1102, 113, 125, 83], "download_times": 483, "PCA_Download": 203, "PCA_Process": 7832, "PCA_Upload": 729}]
+{'StatusCode': 200, 'ResponseMetadata': {'RequestId': '770f537c-8c45-47d8-96dd-4c0df38b554a', 'HTTPStatusCode': 200, 'RetryAttempts': 0, 'HTTPHeaders': {'x-amzn-remapped-content-length': '0', 'date': 'Mon, 16 May 2022 02:04:37 GMT', 'x-amzn-trace-id': 'root=1-6281b135-2e3f9111350b337553dc2bd7;sampled=0', 'connection': 'keep-alive', 'content-length': '1043', 'content-type': 'application/json', 'x-amzn-requestid': '770f537c-8c45-47d8-96dd-4c0df38b554a', 'x-amz-executed-version': '$LATEST'}}, 'ExecutedVersion': '$LATEST', 'Payload': <botocore.response.StreamingBody object at 0x7f335932c518>}
+CombineModels
+********************
+b'{"statusCode": 200, "accuracy": ["5_10_0.25", "5_10_0.95", "5_10_0.5", "5_10_0.75", "10_10_0.95", "10_10_0.75", "10_10_0.25", "10_10_0.5"], "returned_latecy": [0.9008, 0.9208, 0.9354, 0.9354, 0.9532, 0.9656, 0.9682, 0.975], "all_data": "\\"[{\'statusCode\': 200, \'body\': \'Done Training Threads = 6\', \'key1\': \'inv_300\', \'duration\': 8272, \'trees_max_depthes\': [\'5_10_0.25\', \'10_10_0.25\', \'5_10_0.5\', \'10_10_0.5\'], \'accuracies\': [0.9008, 0.9682, 0.9354, 0.975], \'process_times\': [743, 1434, 1206, 2254], \'upload_times\': [652, 95, 122, 130], \'download_times\': 247, \'PCA_Download\': 203, \'PCA_Process\': 7832, \'PCA_Upload\': 729}, {\'statusCode\': 200, \'body\': \'Done Training Threads = 6\', \'key1\': \'inv_300\', \'duration\': 12450, \'trees_max_depthes\': [\'5_10_0.75\', \'10_10_0.75\', \'5_10_0.95\', \'10_10_0.95\'], \'accuracies\': [0.9354, 0.9656, 0.9208, 0.9532], \'process_times\': [1208, 2733, 1829, 3409], \'upload_times\': [1102, 113, 125, 83], \'download_times\': 483, \'PCA_Download\': 203, \'PCA_Process\': 7832, \'PCA_Upload\': 729}]\\"", "body": "\\"Hello from Lambda!\\""}'
+********************
+E2E Latency:24.265345811843872 seconds
+========================
+Starting prewarmer => 141806
+Starting consumer => 141807
+141807 got PCA
+**** found PCA in dict_payloads
+num instances of PCA are: 1
+***** executing PCA payload { "bundle_size": 4,"key1": "300" }
+Prewarmer 141806 exiting...
+Executing PCA with { "bundle_size": 4,"key1": "300" }
+{'Payload': <botocore.response.StreamingBody object at 0x7f3655563470>, 'ExecutedVersion': '$LATEST', 'StatusCode': 200, 'ResponseMetadata': {'HTTPHeaders': {'content-type': 'application/json', 'x-amzn-requestid': 'c1e440e7-2886-47fc-9df5-144621458e1c', 'content-length': '465', 'date': 'Mon, 16 May 2022 02:05:52 GMT', 'connection': 'keep-alive', 'x-amzn-remapped-content-length': '0', 'x-amzn-trace-id': 'root=1-6281b177-022995b5694d37964b9be391;sampled=0', 'x-amz-executed-version': '$LATEST'}, 'HTTPStatusCode': 200, 'RetryAttempts': 0, 'RequestId': 'c1e440e7-2886-47fc-9df5-144621458e1c'}}
+PCA
+********************
+b'{"detail": {"indeces": [{"mod_index": 1, "PCA_Download": 197, "PCA_Process": 7540, "PCA_Upload": 808, "key1": "inv_300", "num_of_trees": [5, 10, 5, 10], "max_depth": [10, 10, 10, 10], "feature_fraction": [0.25, 0.25, 0.5, 0.5], "threads": 6}, {"mod_index": 2, "PCA_Download": 197, "PCA_Process": 7540, "PCA_Upload": 808, "key1": "inv_300", "num_of_trees": [5, 10, 5, 10], "max_depth": [10, 10, 10, 10], "feature_fraction": [0.75, 0.75, 0.95, 0.95], "threads": 6}]}}'
+********************
+141807 got PCA
+141807 got ParamTune
+**** found ParamTune in dict_payloads
+num instances of ParamTune are: 2
+***** executing ParamTune payload {"PCA_Upload": 808, "feature_fraction": [0.25, 0.25, 0.5, 0.5], "max_depth": [10, 10, 10, 10], "key1": "inv_300", "num_of_trees": [5, 10, 5, 10], "threads": 6, "PCA_Process": 7540, "PCA_Download": 197, "mod_index": 1}
+***** executing ParamTune payload {"PCA_Upload": 808, "feature_fraction": [0.75, 0.75, 0.95, 0.95], "max_depth": [10, 10, 10, 10], "key1": "inv_300", "num_of_trees": [5, 10, 5, 10], "threads": 6, "PCA_Process": 7540, "PCA_Download": 197, "mod_index": 2}
+Executing ParamTune with {"PCA_Upload": 808, "feature_fraction": [0.25, 0.25, 0.5, 0.5], "max_depth": [10, 10, 10, 10], "key1": "inv_300", "num_of_trees": [5, 10, 5, 10], "threads": 6, "PCA_Process": 7540, "PCA_Download": 197, "mod_index": 1}
+{'Payload': <botocore.response.StreamingBody object at 0x7f36555644e0>, 'ExecutedVersion': '$LATEST', 'StatusCode': 200, 'ResponseMetadata': {'HTTPHeaders': {'content-type': 'application/json', 'x-amzn-requestid': '099f25fa-5df1-42e3-9200-39122c662090', 'content-length': '382', 'date': 'Mon, 16 May 2022 02:06:00 GMT', 'connection': 'keep-alive', 'x-amzn-remapped-content-length': '0', 'x-amzn-trace-id': 'root=1-6281b180-53b332e25c7cd31500ac266e;sampled=0', 'x-amz-executed-version': '$LATEST'}, 'HTTPStatusCode': 200, 'RetryAttempts': 0, 'RequestId': '099f25fa-5df1-42e3-9200-39122c662090'}}
+ adding data to shared_dict_payloads["CombineModels"]: {"statusCode": 200, "body": "\"Done Training Threads = 6\"", "key1": "inv_300", "duration": 7598, "trees_max_depthes": ["5_10_0.25", "10_10_0.25", "5_10_0.5", "10_10_0.5"], "accuracies": [0.9008, 0.9682, 0.9354, 0.975], "process_times": [710, 1304, 1199, 2155], "upload_times": [305, 121, 76, 128], "download_times": 250, "PCA_Download": 197, "PCA_Process": 7540, "PCA_Upload": 808}
+1
+ParamTune
+********************
+b'{"statusCode": 200, "body": "\\"Done Training Threads = 6\\"", "key1": "inv_300", "duration": 7598, "trees_max_depthes": ["5_10_0.25", "10_10_0.25", "5_10_0.5", "10_10_0.5"], "accuracies": [0.9008, 0.9682, 0.9354, 0.975], "process_times": [710, 1304, 1199, 2155], "upload_times": [305, 121, 76, 128], "download_times": 250, "PCA_Download": 197, "PCA_Process": 7540, "PCA_Upload": 808}'
+********************
+Executing ParamTune with {"PCA_Upload": 808, "feature_fraction": [0.75, 0.75, 0.95, 0.95], "max_depth": [10, 10, 10, 10], "key1": "inv_300", "num_of_trees": [5, 10, 5, 10], "threads": 6, "PCA_Process": 7540, "PCA_Download": 197, "mod_index": 2}
+{'Payload': <botocore.response.StreamingBody object at 0x7f3655565550>, 'ExecutedVersion': '$LATEST', 'StatusCode': 200, 'ResponseMetadata': {'HTTPHeaders': {'content-type': 'application/json', 'x-amzn-requestid': 'a5f0c1a3-689a-4974-8109-89532a5ed8f6', 'content-length': '386', 'date': 'Mon, 16 May 2022 02:06:05 GMT', 'connection': 'keep-alive', 'x-amzn-remapped-content-length': '0', 'x-amzn-trace-id': 'root=1-6281b180-4f23bf2278cf0305300c1daf;sampled=0', 'x-amz-executed-version': '$LATEST'}, 'HTTPStatusCode': 200, 'RetryAttempts': 0, 'RequestId': 'a5f0c1a3-689a-4974-8109-89532a5ed8f6'}}
+ adding data to shared_dict_payloads["CombineModels"]: {"statusCode": 200, "body": "\"Done Training Threads = 6\"", "key1": "inv_300", "duration": 13178, "trees_max_depthes": ["5_10_0.75", "10_10_0.75", "5_10_0.95", "10_10_0.95"], "accuracies": [0.9354, 0.9656, 0.9208, 0.9532], "process_times": [1184, 3386, 1972, 4008], "upload_times": [773, 121, 84, 88], "download_times": 267, "PCA_Download": 197, "PCA_Process": 7540, "PCA_Upload": 808}
+2
+ParamTune
+********************
+b'{"statusCode": 200, "body": "\\"Done Training Threads = 6\\"", "key1": "inv_300", "duration": 13178, "trees_max_depthes": ["5_10_0.75", "10_10_0.75", "5_10_0.95", "10_10_0.95"], "accuracies": [0.9354, 0.9656, 0.9208, 0.9532], "process_times": [1184, 3386, 1972, 4008], "upload_times": [773, 121, 84, 88], "download_times": 267, "PCA_Download": 197, "PCA_Process": 7540, "PCA_Upload": 808}'
+********************
+141807 got ParamTune
+141807 got CombineModels
+**** found CombineModels in dict_payloads
+num instances of CombineModels are: 1
+***** executing CombineModels payload [{"statusCode": 200, "body": "Done Training Threads = 6", "key1": "inv_300", "duration": 7598, "trees_max_depthes": ["5_10_0.25", "10_10_0.25", "5_10_0.5", "10_10_0.5"], "accuracies": [0.9008, 0.9682, 0.9354, 0.975], "process_times": [710, 1304, 1199, 2155], "upload_times": [305, 121, 76, 128], "download_times": 250, "PCA_Download": 197, "PCA_Process": 7540, "PCA_Upload": 808}, {"statusCode": 200, "body": "Done Training Threads = 6", "key1": "inv_300", "duration": 13178, "trees_max_depthes": ["5_10_0.75", "10_10_0.75", "5_10_0.95", "10_10_0.95"], "accuracies": [0.9354, 0.9656, 0.9208, 0.9532], "process_times": [1184, 3386, 1972, 4008], "upload_times": [773, 121, 84, 88], "download_times": 267, "PCA_Download": 197, "PCA_Process": 7540, "PCA_Upload": 808}]
+Executing CombineModels with [{"statusCode": 200, "body": "Done Training Threads = 6", "key1": "inv_300", "duration": 7598, "trees_max_depthes": ["5_10_0.25", "10_10_0.25", "5_10_0.5", "10_10_0.5"], "accuracies": [0.9008, 0.9682, 0.9354, 0.975], "process_times": [710, 1304, 1199, 2155], "upload_times": [305, 121, 76, 128], "download_times": 250, "PCA_Download": 197, "PCA_Process": 7540, "PCA_Upload": 808}, {"statusCode": 200, "body": "Done Training Threads = 6", "key1": "inv_300", "duration": 13178, "trees_max_depthes": ["5_10_0.75", "10_10_0.75", "5_10_0.95", "10_10_0.95"], "accuracies": [0.9354, 0.9656, 0.9208, 0.9532], "process_times": [1184, 3386, 1972, 4008], "upload_times": [773, 121, 84, 88], "download_times": 267, "PCA_Download": 197, "PCA_Process": 7540, "PCA_Upload": 808}]
+{'Payload': <botocore.response.StreamingBody object at 0x7f36555644e0>, 'ExecutedVersion': '$LATEST', 'StatusCode': 200, 'ResponseMetadata': {'HTTPHeaders': {'content-type': 'application/json', 'x-amzn-requestid': 'b6b5efd1-a48d-4d67-9b4f-043cbe6129e1', 'content-length': '1041', 'date': 'Mon, 16 May 2022 02:06:06 GMT', 'connection': 'keep-alive', 'x-amzn-remapped-content-length': '0', 'x-amzn-trace-id': 'root=1-6281b18e-222e941b536330042e70ba9b;sampled=0', 'x-amz-executed-version': '$LATEST'}, 'HTTPStatusCode': 200, 'RetryAttempts': 0, 'RequestId': 'b6b5efd1-a48d-4d67-9b4f-043cbe6129e1'}}
+CombineModels
+********************
+b'{"statusCode": 200, "accuracy": ["5_10_0.25", "5_10_0.95", "5_10_0.5", "5_10_0.75", "10_10_0.95", "10_10_0.75", "10_10_0.25", "10_10_0.5"], "returned_latecy": [0.9008, 0.9208, 0.9354, 0.9354, 0.9532, 0.9656, 0.9682, 0.975], "all_data": "\\"[{\'statusCode\': 200, \'body\': \'Done Training Threads = 6\', \'key1\': \'inv_300\', \'duration\': 7598, \'trees_max_depthes\': [\'5_10_0.25\', \'10_10_0.25\', \'5_10_0.5\', \'10_10_0.5\'], \'accuracies\': [0.9008, 0.9682, 0.9354, 0.975], \'process_times\': [710, 1304, 1199, 2155], \'upload_times\': [305, 121, 76, 128], \'download_times\': 250, \'PCA_Download\': 197, \'PCA_Process\': 7540, \'PCA_Upload\': 808}, {\'statusCode\': 200, \'body\': \'Done Training Threads = 6\', \'key1\': \'inv_300\', \'duration\': 13178, \'trees_max_depthes\': [\'5_10_0.75\', \'10_10_0.75\', \'5_10_0.95\', \'10_10_0.95\'], \'accuracies\': [0.9354, 0.9656, 0.9208, 0.9532], \'process_times\': [1184, 3386, 1972, 4008], \'upload_times\': [773, 121, 84, 88], \'download_times\': 267, \'PCA_Download\': 197, \'PCA_Process\': 7540, \'PCA_Upload\': 808}]\\"", "body": "\\"Hello from Lambda!\\""}'
+********************
+E2E Latency:23.05923557281494 seconds
+========================
+Starting prewarmer => 141903
+Starting consumer => 141904
+141904 got PCA
+**** found PCA in dict_payloads
+num instances of PCA are: 1
+***** executing PCA payload { "bundle_size": 4,"key1": "300" }
+Prewarmer 141903 exiting...
+Executing PCA with { "bundle_size": 4,"key1": "300" }
+{'ExecutedVersion': '$LATEST', 'StatusCode': 200, 'ResponseMetadata': {'HTTPHeaders': {'x-amzn-remapped-content-length': '0', 'connection': 'keep-alive', 'content-type': 'application/json', 'content-length': '465', 'date': 'Mon, 16 May 2022 02:07:20 GMT', 'x-amz-executed-version': '$LATEST', 'x-amzn-trace-id': 'root=1-6281b1d0-6071b3df2163771e22e91c18;sampled=0', 'x-amzn-requestid': '3092fee4-2ce9-4192-9529-81a28ada279e'}, 'RetryAttempts': 0, 'HTTPStatusCode': 200, 'RequestId': '3092fee4-2ce9-4192-9529-81a28ada279e'}, 'Payload': <botocore.response.StreamingBody object at 0x7f9385c9c4a8>}
+PCA
+********************
+b'{"detail": {"indeces": [{"mod_index": 1, "PCA_Download": 197, "PCA_Process": 7452, "PCA_Upload": 787, "key1": "inv_300", "num_of_trees": [5, 10, 5, 10], "max_depth": [10, 10, 10, 10], "feature_fraction": [0.25, 0.25, 0.5, 0.5], "threads": 6}, {"mod_index": 2, "PCA_Download": 197, "PCA_Process": 7452, "PCA_Upload": 787, "key1": "inv_300", "num_of_trees": [5, 10, 5, 10], "max_depth": [10, 10, 10, 10], "feature_fraction": [0.75, 0.75, 0.95, 0.95], "threads": 6}]}}'
+********************
+141904 got PCA
+141904 got ParamTune
+**** found ParamTune in dict_payloads
+num instances of ParamTune are: 2
+***** executing ParamTune payload {"PCA_Process": 7452, "key1": "inv_300", "max_depth": [10, 10, 10, 10], "num_of_trees": [5, 10, 5, 10], "PCA_Download": 197, "mod_index": 1, "feature_fraction": [0.25, 0.25, 0.5, 0.5], "PCA_Upload": 787, "threads": 6}
+***** executing ParamTune payload {"PCA_Process": 7452, "key1": "inv_300", "max_depth": [10, 10, 10, 10], "num_of_trees": [5, 10, 5, 10], "PCA_Download": 197, "mod_index": 2, "feature_fraction": [0.75, 0.75, 0.95, 0.95], "PCA_Upload": 787, "threads": 6}
+Executing ParamTune with {"PCA_Process": 7452, "key1": "inv_300", "max_depth": [10, 10, 10, 10], "num_of_trees": [5, 10, 5, 10], "PCA_Download": 197, "mod_index": 1, "feature_fraction": [0.25, 0.25, 0.5, 0.5], "PCA_Upload": 787, "threads": 6}
+{'ExecutedVersion': '$LATEST', 'StatusCode': 200, 'ResponseMetadata': {'HTTPHeaders': {'x-amzn-remapped-content-length': '0', 'connection': 'keep-alive', 'content-type': 'application/json', 'content-length': '383', 'date': 'Mon, 16 May 2022 02:07:29 GMT', 'x-amz-executed-version': '$LATEST', 'x-amzn-trace-id': 'root=1-6281b1d8-7ac9a6816f4b09dc61631921;sampled=0', 'x-amzn-requestid': '9b34e34c-4b27-47fc-bb49-e4c587cdc651'}, 'RetryAttempts': 0, 'HTTPStatusCode': 200, 'RequestId': '9b34e34c-4b27-47fc-bb49-e4c587cdc651'}, 'Payload': <botocore.response.StreamingBody object at 0x7f9385c9d518>}
+ adding data to shared_dict_payloads["CombineModels"]: {"statusCode": 200, "body": "\"Done Training Threads = 6\"", "key1": "inv_300", "duration": 8277, "trees_max_depthes": ["5_10_0.25", "10_10_0.25", "5_10_0.5", "10_10_0.5"], "accuracies": [0.9008, 0.9682, 0.9354, 0.975], "process_times": [827, 1341, 1112, 2049], "upload_times": [995, 155, 133, 140], "download_times": 248, "PCA_Download": 197, "PCA_Process": 7452, "PCA_Upload": 787}
+1
+ParamTune
+********************
+b'{"statusCode": 200, "body": "\\"Done Training Threads = 6\\"", "key1": "inv_300", "duration": 8277, "trees_max_depthes": ["5_10_0.25", "10_10_0.25", "5_10_0.5", "10_10_0.5"], "accuracies": [0.9008, 0.9682, 0.9354, 0.975], "process_times": [827, 1341, 1112, 2049], "upload_times": [995, 155, 133, 140], "download_times": 248, "PCA_Download": 197, "PCA_Process": 7452, "PCA_Upload": 787}'
+********************
+Executing ParamTune with {"PCA_Process": 7452, "key1": "inv_300", "max_depth": [10, 10, 10, 10], "num_of_trees": [5, 10, 5, 10], "PCA_Download": 197, "mod_index": 2, "feature_fraction": [0.75, 0.75, 0.95, 0.95], "PCA_Upload": 787, "threads": 6}
+{'ExecutedVersion': '$LATEST', 'StatusCode': 200, 'ResponseMetadata': {'HTTPHeaders': {'x-amzn-remapped-content-length': '0', 'connection': 'keep-alive', 'content-type': 'application/json', 'content-length': '388', 'date': 'Mon, 16 May 2022 02:07:32 GMT', 'x-amz-executed-version': '$LATEST', 'x-amzn-trace-id': 'root=1-6281b1d8-7d44c6f03349532822135a38;sampled=0', 'x-amzn-requestid': '143adce4-27f9-4691-aac9-26c9acb52890'}, 'RetryAttempts': 0, 'HTTPStatusCode': 200, 'RequestId': '143adce4-27f9-4691-aac9-26c9acb52890'}, 'Payload': <botocore.response.StreamingBody object at 0x7f9385c9d588>}
+ adding data to shared_dict_payloads["CombineModels"]: {"statusCode": 200, "body": "\"Done Training Threads = 6\"", "key1": "inv_300", "duration": 11929, "trees_max_depthes": ["5_10_0.75", "10_10_0.75", "5_10_0.95", "10_10_0.95"], "accuracies": [0.9354, 0.9656, 0.9208, 0.9532], "process_times": [1261, 2633, 1680, 3563], "upload_times": [1008, 90, 142, 123], "download_times": 246, "PCA_Download": 197, "PCA_Process": 7452, "PCA_Upload": 787}
+2
+ParamTune
+********************
+b'{"statusCode": 200, "body": "\\"Done Training Threads = 6\\"", "key1": "inv_300", "duration": 11929, "trees_max_depthes": ["5_10_0.75", "10_10_0.75", "5_10_0.95", "10_10_0.95"], "accuracies": [0.9354, 0.9656, 0.9208, 0.9532], "process_times": [1261, 2633, 1680, 3563], "upload_times": [1008, 90, 142, 123], "download_times": 246, "PCA_Download": 197, "PCA_Process": 7452, "PCA_Upload": 787}'
+********************
+141904 got ParamTune
+141904 got CombineModels
+**** found CombineModels in dict_payloads
+num instances of CombineModels are: 1
+***** executing CombineModels payload [{"statusCode": 200, "body": "Done Training Threads = 6", "key1": "inv_300", "duration": 8277, "trees_max_depthes": ["5_10_0.25", "10_10_0.25", "5_10_0.5", "10_10_0.5"], "accuracies": [0.9008, 0.9682, 0.9354, 0.975], "process_times": [827, 1341, 1112, 2049], "upload_times": [995, 155, 133, 140], "download_times": 248, "PCA_Download": 197, "PCA_Process": 7452, "PCA_Upload": 787}, {"statusCode": 200, "body": "Done Training Threads = 6", "key1": "inv_300", "duration": 11929, "trees_max_depthes": ["5_10_0.75", "10_10_0.75", "5_10_0.95", "10_10_0.95"], "accuracies": [0.9354, 0.9656, 0.9208, 0.9532], "process_times": [1261, 2633, 1680, 3563], "upload_times": [1008, 90, 142, 123], "download_times": 246, "PCA_Download": 197, "PCA_Process": 7452, "PCA_Upload": 787}]
+Executing CombineModels with [{"statusCode": 200, "body": "Done Training Threads = 6", "key1": "inv_300", "duration": 8277, "trees_max_depthes": ["5_10_0.25", "10_10_0.25", "5_10_0.5", "10_10_0.5"], "accuracies": [0.9008, 0.9682, 0.9354, 0.975], "process_times": [827, 1341, 1112, 2049], "upload_times": [995, 155, 133, 140], "download_times": 248, "PCA_Download": 197, "PCA_Process": 7452, "PCA_Upload": 787}, {"statusCode": 200, "body": "Done Training Threads = 6", "key1": "inv_300", "duration": 11929, "trees_max_depthes": ["5_10_0.75", "10_10_0.75", "5_10_0.95", "10_10_0.95"], "accuracies": [0.9354, 0.9656, 0.9208, 0.9532], "process_times": [1261, 2633, 1680, 3563], "upload_times": [1008, 90, 142, 123], "download_times": 246, "PCA_Download": 197, "PCA_Process": 7452, "PCA_Upload": 787}]
+{'ExecutedVersion': '$LATEST', 'StatusCode': 200, 'ResponseMetadata': {'HTTPHeaders': {'x-amzn-remapped-content-length': '0', 'connection': 'keep-alive', 'content-type': 'application/json', 'content-length': '1044', 'date': 'Mon, 16 May 2022 02:07:33 GMT', 'x-amz-executed-version': '$LATEST', 'x-amzn-trace-id': 'root=1-6281b1e5-5ebd4df8233bd1001ac71001;sampled=0', 'x-amzn-requestid': '9cee3f63-abc0-42f4-9279-ab8bd2861e19'}, 'RetryAttempts': 0, 'HTTPStatusCode': 200, 'RequestId': '9cee3f63-abc0-42f4-9279-ab8bd2861e19'}, 'Payload': <botocore.response.StreamingBody object at 0x7f9385c9d518>}
+CombineModels
+********************
+b'{"statusCode": 200, "accuracy": ["5_10_0.25", "5_10_0.95", "5_10_0.5", "5_10_0.75", "10_10_0.95", "10_10_0.75", "10_10_0.25", "10_10_0.5"], "returned_latecy": [0.9008, 0.9208, 0.9354, 0.9354, 0.9532, 0.9656, 0.9682, 0.975], "all_data": "\\"[{\'statusCode\': 200, \'body\': \'Done Training Threads = 6\', \'key1\': \'inv_300\', \'duration\': 8277, \'trees_max_depthes\': [\'5_10_0.25\', \'10_10_0.25\', \'5_10_0.5\', \'10_10_0.5\'], \'accuracies\': [0.9008, 0.9682, 0.9354, 0.975], \'process_times\': [827, 1341, 1112, 2049], \'upload_times\': [995, 155, 133, 140], \'download_times\': 248, \'PCA_Download\': 197, \'PCA_Process\': 7452, \'PCA_Upload\': 787}, {\'statusCode\': 200, \'body\': \'Done Training Threads = 6\', \'key1\': \'inv_300\', \'duration\': 11929, \'trees_max_depthes\': [\'5_10_0.75\', \'10_10_0.75\', \'5_10_0.95\', \'10_10_0.95\'], \'accuracies\': [0.9354, 0.9656, 0.9208, 0.9532], \'process_times\': [1261, 2633, 1680, 3563], \'upload_times\': [1008, 90, 142, 123], \'download_times\': 246, \'PCA_Download\': 197, \'PCA_Process\': 7452, \'PCA_Upload\': 787}]\\"", "body": "\\"Hello from Lambda!\\""}'
+********************
+E2E Latency:21.655664443969727 seconds
+========================
