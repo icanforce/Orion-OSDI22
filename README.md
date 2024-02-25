@@ -113,3 +113,20 @@ arn:aws:iam::123456789012:role/OrionStepRole
 ## Steps for Simulation Results:
 1. **Policy_simulator** compares different prewarming policies 
 
+## The paper and slidescan be downloaded from here:
+https://www.usenix.org/conference/osdi22/presentation/mahgoub
+
+## For citing this work, please use the following references:
+@inproceedings {280890,
+author = {Ashraf Mahgoub and Edgardo Barsallo Yi and Karthick Shankar and Sameh Elnikety and Somali Chaterji and Saurabh Bagchi},
+title = {{ORION} and the Three Rights: Sizing, Bundling, and Prewarming for Serverless {DAGs}},
+booktitle = {16th USENIX Symposium on Operating Systems Design and Implementation (OSDI 22)},
+year = {2022},
+isbn = {978-1-939133-28-1},
+address = {Carlsbad, CA},
+pages = {303--320},
+url = {https://www.usenix.org/conference/osdi22/presentation/mahgoub},
+publisher = {USENIX Association},
+month = jul
+}
+
